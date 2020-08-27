@@ -1,9 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import './header.styles.css'
-
-import Image from './image';
+import '../CSS-Files/header.styles.css'
+import Personal1 from './JSImages/personal1'
+import Expo from '../assets/expo.svg'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -17,8 +17,9 @@ const Header = ({ siteTitle }) => (
   >
     <div className="navbar">
     
-      
+
         <Link to="/" className="Link">
+          <Expo />
           <h7 id="Name">
             {siteTitle}
           </h7>
