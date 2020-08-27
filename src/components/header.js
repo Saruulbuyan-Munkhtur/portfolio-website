@@ -1,6 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import './header.styles.css'
+
+import Image from './image';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -8,32 +11,15 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        width: 1330,
-        height: 256,
-        padding: `1.45rem 1.0875rem`,
-        display: `flex`,
-        justifyContent: `space-between`
-      }}
-    >
+    <div className="navbar">
     
-      <h7 
-        style={{ 
-          marginLeft: 0,
-          allignContent: `Left`,
-      }}>
-        <Link
-          to="/"
-          style={{
-            color: `#f8f8ff`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+      
+        <Link to="/">
+          <h7 id="Name">
+            {siteTitle}
+          </h7>
         </Link>
-      </h7>
+      
       <div
         style={{
           display: `flex`,
@@ -46,11 +32,11 @@ const Header = ({ siteTitle }) => (
           textDecoration: `none`,
           width: 800,
         }}>
-          <div><h8>About Me</h8></div>
-          <div><h8>Portfolio</h8></div>
-          <div><h8>My Blogs</h8></div>
-          <div><h8>Contact</h8></div>
-          <div><button>Dark Mode</button></div>
+          <div><Link to="/AboutMe"><h8>About Me</h8></Link></div>
+          <div><Link to="/Portfolio"><h8>Portfolio</h8></Link></div>
+          <div><Link to="/"><h8>My Blogs</h8></Link></div>
+          <div><Link to="/"><h8>Contact</h8></Link></div>
+          <div><button><Link to="/"><img href='../images/codewars.svg'></img></Link></button></div>
       </div>
     </div>
   </header>

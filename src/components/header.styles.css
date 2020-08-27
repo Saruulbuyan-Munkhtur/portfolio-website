@@ -1,0 +1,27 @@
+.navbar {
+  margin: 0 auto;
+  width: 1330;
+  height: 256;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  justify-Content: space-between;
+}
+
+#Name {
+  margin-left: 0;
+  color: #f8f8ff;
+  text-Decoration: none;
+}
+
+h8 {
+  color: #f8f8ff;
+}
+
+link {
+  color: #f8f8ff;
+}
+
+button {
+  background: none;
+  border: none;
+}
