@@ -9,12 +9,16 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       marginBottom: `1.45rem`,
+      backgroundColor: `#32A1E6`,
+      backgroundImage: `linear-gradient(120deg, #32A1E6 30%, #7ABFEA 91%)`,
+      height: `120px`,
+      borderBottom: `3px solid black`,
     }}
   >
     <div className="navbar">
     
       
-        <Link to="/">
+        <Link to="/" className="Link">
           <h7 id="Name">
             {siteTitle}
           </h7>
@@ -27,16 +31,16 @@ const Header = ({ siteTitle }) => (
           flexWrap: `nowrap`,
 
           allignItems: `flex-start`,
-          justifyContent: `space-around`,
+          justifyContent: `space-between`,
           color: `#f8f8ff`,
           textDecoration: `none`,
           width: 800,
         }}>
-          <div><Link to="/AboutMe"><h8>About Me</h8></Link></div>
-          <div><Link to="/Portfolio"><h8>Portfolio</h8></Link></div>
-          <div><Link to="/"><h8>My Blogs</h8></Link></div>
-          <div><Link to="/"><h8>Contact</h8></Link></div>
-          <div><button><Link to="/"><img href='../images/codewars.svg'></img></Link></button></div>
+          <div><Link to="/aboutMe" className="Link">About Me</Link></div>
+          <div><Link to="/portfolio" className="Link">Portfolio</Link></div>
+          <div><Link to="/myBlogs" className="Link">My Blogs</Link></div>
+          <div><Link to="/contact" className="Link">Contact</Link></div>
+          <div><button><Link to="/" className="Link">Dark Mode</Link></button></div>
       </div>
     </div>
   </header>

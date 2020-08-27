@@ -15,13 +15,25 @@
 
 h8 {
   color: #f8f8ff;
+  
 }
 
-link {
+.Link {
   color: #f8f8ff;
+  border: none;
+  text-decoration: wavy;
+  font-family: 'Anonymous Pro', monospace;
+}
+.Link:hover {
+  color: #353634;
 }
 
 button {
   background: none;
   border: none;
+}
+
+svg {
+  max-width: 100px;
+  border: 1px solid black;
 }
