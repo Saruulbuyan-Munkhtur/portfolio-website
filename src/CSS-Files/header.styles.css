@@ -1,6 +1,16 @@
+header{
+  margin-bottom: 1.45rem;
+  background-Color: #32A1E6;
+  background-image: linear-gradient(120deg, #32A1E6 30%, #7ABFEA 91%);
+  height: 20%;
+  border-bottom: 3px solid black;
+}
+
+
+
 .navbar {
   margin: 0 auto;
-  width: 1330;
+  width: 100%;
   height: 256;
   padding: 1.45rem 1.0875rem;
   display: flex;

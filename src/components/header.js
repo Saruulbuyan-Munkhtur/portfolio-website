@@ -6,37 +6,15 @@ import Personal1 from './JSImages/personal1'
 import Expo from '../assets/expo.svg'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      marginBottom: `1.45rem`,
-      backgroundColor: `#32A1E6`,
-      backgroundImage: `linear-gradient(120deg, #32A1E6 30%, #7ABFEA 91%)`,
-      height: `120px`,
-      borderBottom: `3px solid black`,
-    }}
-  >
+  <header>
     <div className="navbar">
-    
-
         <Link to="/" className="Link">
           <Expo />
           <h7 id="Name">
             {siteTitle}
           </h7>
         </Link>
-      
-      <div
-        style={{
-          display: `flex`,
-          flexDirection: `row`,
-          flexWrap: `nowrap`,
-
-          allignItems: `flex-start`,
-          justifyContent: `space-between`,
-          color: `#f8f8ff`,
-          textDecoration: `none`,
-          width: 800,
-        }}>
+      <div className="Header-Links">
           <div><Link to="/aboutMe" className="Link">About Me</Link></div>
           <div><Link to="/portfolio" className="Link">Portfolio</Link></div>
           <div><Link to="/myBlogs" className="Link">My Blogs</Link></div>
