@@ -1,0 +1,59 @@
+.navbar {
+  margin: 0 auto;
+  width: 1330;
+  height: 256;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  justify-Content: space-between;
+  flex-Direction: row;
+  flex-Wrap: nowrap;
+  align-items: flex-start;
+  justify-Content: space-between;
+  color: #f8f8ff;
+  text-Decoration: none;
+  width: 800;
+}
+
+#Name {
+  margin-left: 0;
+  color: #f8f8ff;
+  text-Decoration: none;
+}
+
+h8 {
+  color: #f8f8ff;
+  
+}
+
+.Link {
+  color: #f8f8ff;
+  border: none;
+  text-decoration: wavy;
+  font-family: 'Anonymous Pro', monospace;
+}
+.Link:hover {
+  color: #353634;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.Dark {
+  width: 50px;
+  height: 50px;
+}
+
+.Expo {
+  width: 50px;
+}
+
+header {
+  margin-Bottom: 1.45rem;
+  background-Color: #116466;
+  background-Image: linear-gradient(120deg, #116466 60%, #ad6522 51%);
+  height: 120px;
+  border-Bottom: 3px solid black;
+  
+}
