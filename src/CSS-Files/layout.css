@@ -14,7 +14,20 @@ aside,
 details,
 figcaption,
 figure,
-footer,
+footer {
+  background-color: #116466;
+  margin: 0 auto;
+  width: 1330;
+  height: 256;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  justify-Content: space-around;
+  flex-Direction: row;
+  flex-Wrap: nowrap;
+  align-items: flex-end;
+  color: #f8f8ff;
+  text-Decoration: none;
+}
 header,
 main,
 menu,
