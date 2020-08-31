@@ -2,3 +2,13 @@
   border-radius: 50cm;
   border: 1px solid black;
 }
+
+.body {
+  display: flex;
+  flex-Direction: row;
+  flex-Wrap: nowrap;
+  justify-Items: flex-end;
+  justify-Content: space-between;
+  width: 1200px;
+  background-image: '../images/sunset.jpg'
+}

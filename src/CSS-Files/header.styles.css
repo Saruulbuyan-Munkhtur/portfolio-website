@@ -41,3 +41,12 @@ svg {
 .Expo {
   width: 50px;
 }
+
+header {
+  margin-Bottom: 1.45rem;
+  background-Color: #116466;
+  background-Image: linear-gradient(120deg, #116466 60%, #ad6522 51%);
+  height: 120px;
+  border-Bottom: 3px solid black;
+  
+}
