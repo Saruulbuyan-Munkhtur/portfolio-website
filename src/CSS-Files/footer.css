@@ -1,0 +1,23 @@
+.icon {
+  max-width: 50px;
+  border: none;
+  padding: 10px;
+}
+
+footer {
+  background-color: #116466;
+  border-top: 1px solid black;
+  display: flex;
+  justify-items: flex-start;
+  justify-content: left;
+}
+
+.social {
+  flex: 1;
+}
+
+.copyright {
+  flex: 1;
+  font-size: 14px;
+  font-color: white;
+}
