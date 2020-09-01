@@ -1,7 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import '../CSS-Files/footer.css'
+
+import '../CSS-Files/footer.scss'
+
 import Github from '../assets/github.svg'
 import Medium from '../assets/medium.svg'
 import LinkedIn from '../assets/linkedin.svg'

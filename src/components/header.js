@@ -1,9 +1,7 @@
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import '../CSS-Files/header.css'
-import Personal1 from './JSImages/personal1'
-import Expo from '../assets/expo.svg'
+import '../CSS-Files/header.scss'
 import Dark from '../assets/dark2.svg'
 
 const Header = ({ siteTitle }) => (

@@ -29,4 +29,4 @@ const BodyImage = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default BodyImage
+export default BodyImage;
