@@ -3,6 +3,7 @@ title: "Why I decided to publish my first Medium post today"
 subtitle: "The first step is often the most crucial, but it’s also the step many hesitate to take."
 date: "2020-08-19"
 medium-link: "https://medium.com/@SaruulbuyanMunkhtur/why-ive-decided-to-publish-my-first-medium-post-today-and-why-it-matters-1db76f6f548d"
+topics: ['Life', 'Productivity', 'Motivation', 'Writing']
 ---
 ![Photo by Jordan Wozniak on Unsplash](https://miro.medium.com/max/1575/0*E_vmbLaT8ZuotRwQ)
 

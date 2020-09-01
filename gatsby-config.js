@@ -7,8 +7,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-remark',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-sharp',
     
     {
       resolve: `gatsby-source-filesystem`,
