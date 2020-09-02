@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
+import BlogView from './blogView'
+
 const ComponentName = () => {
   const data = useStaticQuery(graphql`
     {
@@ -12,6 +14,7 @@ const ComponentName = () => {
               date
               subtitle
               topics
+              img_link
             }
             wordCount {
               words
@@ -23,25 +26,13 @@ const ComponentName = () => {
   `)
   console.log(data)
   return (
-    <ol>
+    <div>
       {data.allMarkdownRemark.edges.map((edge) => {
         return (
-          <li>
-            <h2>{edge.node.frontmatter.title}</h2>
-            <h4>{edge.node.frontmatter.subtitle}</h4>
-            <ul>
-              {edge.node.frontmatter.topics ? edge.node.frontmatter.topics.map((topic) => {
-                return (
-                  <li>{topic}</li>
-                )
-              }): edge.node.frontmatter.date}
-            </ul>
-            <h5>{edge.node.frontmatter.date}</h5>
-            <h5>{edge.node.wordCount.words}</h5>
-          </li>
+          <BlogView edge={edge}/>
         )
       })}
-    </ol>
+    </div>
   )
 }
 

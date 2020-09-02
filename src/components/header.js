@@ -1,4 +1,4 @@
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import '../CSS-Files/header.scss'
@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.number,
+  siteTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
