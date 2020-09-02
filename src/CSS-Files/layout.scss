@@ -7,17 +7,27 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 10% 5% 15% 5%;
-  max-width: 90%;
-  height: 70%;
-  padding: 0;
+  background-color: #d1e8e2;
 }
 article,
 aside,
 details,
 figcaption,
 figure,
-footer,
+footer {
+  background-color: #116466;
+  margin: 0 auto;
+  width: 1330;
+  height: 256;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  justify-Content: space-around;
+  flex-Direction: row;
+  flex-Wrap: nowrap;
+  align-items: flex-end;
+  color: #f8f8ff;
+  text-Decoration: none;
+}
 header,
 main,
 menu,
@@ -618,7 +628,6 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

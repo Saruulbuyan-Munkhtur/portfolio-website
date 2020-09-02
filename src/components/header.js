@@ -1,32 +1,24 @@
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import '../CSS-Files/header.styles.css'
-import Personal1 from './JSImages/personal1'
-import Expo from '../assets/expo.svg'
+import '../CSS-Files/header.scss'
+import Dark from '../assets/dark2.svg'
 
 const Header = ({ siteTitle }) => (
   <header>
     <div className="navbar">
-        <Link to="/" className="Link">
-          <Expo />
-          <h7 id="Name">
-            {siteTitle}
-          </h7>
-        </Link>
-      <div className="Header-Links">
-          <div><Link to="/aboutMe" className="Link">About Me</Link></div>
-          <div><Link to="/portfolio" className="Link">Portfolio</Link></div>
-          <div><Link to="/myBlogs" className="Link">My Blogs</Link></div>
-          <div><Link to="/contact" className="Link">Contact</Link></div>
-          <div><button><Link to="/" className="Link">Dark Mode</Link></button></div>
-      </div>
+        <div><Link to="/" className="Link"><h7 id="Name">{siteTitle}</h7></Link></div>
+        <div><Link to="/aboutMe" className="Link">About Me</Link></div>
+        <div><Link to="/portfolio" className="Link">Portfolio</Link></div>
+        <div><Link to="/blogs" className="Link">My Blogs</Link></div>
+        <div><Link to="/contact" className="Link">Contact</Link></div>
+        <div><Link to="/" className="Link"><Dark className="Dark"/></Link></div>
     </div>
   </header>
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.number,
 }
 
 Header.defaultProps = {
