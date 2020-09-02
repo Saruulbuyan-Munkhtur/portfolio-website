@@ -1,6 +1,7 @@
 import React from "react"
 //import { Link } from "gatsby"
 
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Personal2 from "../components/JSImages/personal2"
@@ -18,8 +19,7 @@ const IndexPage = () => (
       </div>
 
       <div className="Pic">
-        {/* <Personal2 classname="Personal 2"/> */}
-        <Image filename="personal2.jpg" alt="Photo"/>
+        <Personal2 classname="Personal 2"/>
       </div>
     </div>
   </Layout>

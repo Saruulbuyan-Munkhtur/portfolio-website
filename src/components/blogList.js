@@ -1,9 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
+
 import BlogView from './blogView'
 
-const ComponentName = () => {
+const BlogList = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark {
@@ -16,8 +17,8 @@ const ComponentName = () => {
               topics
               img_link
             }
-            wordCount {
-              words
+            fields {
+              slug
             }
           }
         }
@@ -36,4 +37,4 @@ const ComponentName = () => {
   )
 }
 
-export default ComponentName
+export default BlogList
