@@ -12,3 +12,18 @@
   width: 1200px;
   background-image: '../images/sunset.jpg'
 }
+
+.Intro {
+  max-width:70;
+  flex:1;
+  margin-right: 10%;
+  h1 {
+    border-Bottom: 1px solid black;
+  }
+}
+
+.Pic {
+  max-width:500; 
+  flex: 1; 
+  border-radius: 50px
+}
