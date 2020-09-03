@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 
-import '../CSS-Files/blogView.scss'
+import '../CSS-Files/blogView.module.scss'
 
 const BlogView = ({ edge }) => {
     console.log("tesst")
@@ -29,7 +29,7 @@ const BlogView = ({ edge }) => {
         <h2>{edge.node.frontmatter.subtitle}</h2>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
         <p className="read-more">
-          <Link to="#">Read More</Link>
+          <Link to={`/blog/${edge.node.fields.slug}`}>Read More</Link>
         </p>
       </div>
     </div>

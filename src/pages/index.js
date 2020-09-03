@@ -5,9 +5,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Personal2 from "../components/JSImages/personal2"
-import Image from "../components/JSImages/image"
 
-import '../CSS-Files/index.scss'
+import '../CSS-Files/index.module.scss'
 
 const IndexPage = () => (
   <Layout>

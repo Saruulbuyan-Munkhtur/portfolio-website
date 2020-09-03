@@ -4,8 +4,9 @@ subtitle: "Sometimes not changing is the worst outcome of all..."
 topics: ["Politics", "Economics", "Philosophy", "Geopolitics"]
 date: "2020-09-01"
 medium-link: "To be published..."
-img-link: 'https://miro.medium.com/max/1575/0*E_vmbLaT8ZuotRwQ'
 ---
+
+![Photo by Jordan Wozniak on Unsplash](../images/sunset2.jpg)
 
 > "A pill shouldn't be worse than the disease it's trying to cure"  
 

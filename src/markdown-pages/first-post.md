@@ -5,7 +5,7 @@ date: "2020-08-19"
 medium-link: "https://medium.com/@SaruulbuyanMunkhtur/why-ive-decided-to-publish-my-first-medium-post-today-and-why-it-matters-1db76f6f548d"
 topics: ['Life', 'Productivity', 'Motivation', 'Writing']
 ---
-![Photo by Jordan Wozniak on Unsplash](https://miro.medium.com/max/1575/0*E_vmbLaT8ZuotRwQ)
+![Photo by Jordan Wozniak on Unsplash](../images/sunset2.jpg)
 
 Today, I made the goal for myself to publish my first Medium post on August 19th, 2020, before 11 AM, no excuses. I’ve decided for myself that no matter how inconsistent and how imperfect the article may be that I will publish it no matter what. By doing so, I am doing one of the hardest things in the world: starting something new, all the while exposing 
 yourself to criticism from others. As hard and as difficult as it may be it is a necessary step I must take.

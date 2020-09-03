@@ -1,7 +1,8 @@
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  background: #f5f7f8;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
 }
 body {
   margin: 0;
@@ -18,20 +19,7 @@ aside,
 details,
 figcaption,
 figure,
-footer {
-  background-color: #116466;
-  margin: 0 auto;
-  width: 1330;
-  height: 256;
-  padding: 1.45rem 1.0875rem;
-  display: flex;
-  justify-Content: space-around;
-  flex-Direction: row;
-  flex-Wrap: nowrap;
-  align-items: flex-end;
-  color: #f8f8ff;
-  text-Decoration: none;
-}
+footer,
 header,
 main,
 menu,
