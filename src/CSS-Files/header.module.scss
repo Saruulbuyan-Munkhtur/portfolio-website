@@ -3,6 +3,11 @@ header{
   background-Color: #32A1E6;
   background-image: linear-gradient(120deg, #32A1E6 30%, #7ABFEA 91%);
   border-bottom: 3px solid black;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -13,19 +18,22 @@ header{
   // height: 256;
   padding: 1.45rem 1.0875rem;
   display: flex;
-  justify-Content: space-between;
-  flex-Direction: row;
-  align-items: flex-start;
-  justify-Content: space-between;
-  color: #f8f8ff;
-  text-Decoration: none;
-  border-radius: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
-#Name {
-  margin-left: 0;
-  color: #f8f8ff;
-  text-Decoration: none;
+h4 {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  line-height: inherit;
+  white-space: nowrap;
+  font-family: Museo-700,serif;
+  font-size: 1.5625rem;
 }
 
 h8 {

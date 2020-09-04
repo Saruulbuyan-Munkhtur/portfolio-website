@@ -7,7 +7,7 @@ import Dark from '../assets/dark2.svg'
 const Header = ({ siteTitle }) => (
   <header>
     <div className={mystyles.navbar}>
-        <div><Link to="/" className={mystyles.Link}><h4 id="Name">{siteTitle}</h4></Link></div>
+        <div><Link to="/" className={mystyles.Link}><h4 className="Name">{siteTitle}</h4></Link></div>
         <div><Link to="/aboutMe" className={mystyles.Link}>About Me</Link></div>
         <div><Link to="/portfolio" className={mystyles.Link}>Portfolio</Link></div>
         <div><Link to="/blogs" className={mystyles.Link}>My Blogs</Link></div>

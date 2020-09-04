@@ -16,7 +16,12 @@
 .Intro {
   max-width:70;
   flex:1;
-  margin-right: 10%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
   h1 {
     border-Bottom: 1px solid black;
   }
