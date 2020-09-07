@@ -6,35 +6,42 @@ footer {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: $color_prime;
   text-align: center;
-  display: flex;
-  justify-Content: space-around;
-  flex-Direction: row;
-  flex-Wrap: nowrap;
+  @include flex-center;
   align-items: flex-end;
-  color: #f8f8ff;
+  color: $white;
   text-Decoration: none;
 }
 
 
 
 .icon2 {
-  max-width: 50px;
+  max-width: 30px;
   border: none;
   padding: 10px;
+  &:hover {
+    flex-grow: 3;
+  }
 }
 
 
 
 .social {
-  margin: 2%;
-  flex: 2;
+  @extend %flex_container;
 }
 
 .copyright {
-  flex: 1;
+  @extend %flex_container;
   font-size: 14px;
+  font: $font-secondary;
+  a {
+    color: $off_white;
+    
+    &:hover {
+      color: $picton_blue;
+    }
+  }
 }
 
 

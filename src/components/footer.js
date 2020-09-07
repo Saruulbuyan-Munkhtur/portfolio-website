@@ -16,12 +16,12 @@ import Phone from '../assets/phone.svg'
 const Footer = ({ siteTitle }) => (
   <footer>
     <div className={mystyles.social}>
-    <Link><Github  className={mystyles.icon2}/></Link>
-    <Link ><Medium className={mystyles.icon2}/></Link>
-    <Link ><LinkedIn className={mystyles.icon2}/></Link>
-    <Link ><Instagram className={mystyles.icon2}/></Link>
-    <Link ><Twitter className={mystyles.icon2}/></Link>
-    <Link ><Gmail className={mystyles.icon2}/></Link>
+    <Link to="https://github.com/ErozionZeal"><Github  className={mystyles.icon2}/></Link>
+    <Link  to="https://medium.com/@SaruulbuyanMunkhtur"><Medium className={mystyles.icon2}/></Link>
+    <Link  to="https://www.linkedin.com/in/saruulbuyan-munkhtur-a82257185/"><LinkedIn className={mystyles.icon2}/></Link>
+    <Link  to="https://www.instagram.com/?hl=en"><Instagram className={mystyles.icon2}/></Link>
+    <Link  to="https://www.Twitter.com"><Twitter className={mystyles.icon2}/></Link>
+    <Link  to="@cedricmunkhtur2020@gmail.com"><Gmail className={mystyles.icon2}/></Link>
     </div>
     <div><Link ><Phone /> +976 99728346</Link></div>
     <div className={mystyles.copyright}>
