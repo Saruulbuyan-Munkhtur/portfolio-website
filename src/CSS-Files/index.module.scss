@@ -3,7 +3,7 @@
   border: 1px solid black;
 }
 
-.body {
+.index {
   display: flex;
   flex-Direction: row;
   flex-Wrap: nowrap;
@@ -31,4 +31,11 @@
   max-width:500; 
   flex: 1; 
   border-radius: 50px
+}
+
+.backgroundImage {
+  width: 100%;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
 }

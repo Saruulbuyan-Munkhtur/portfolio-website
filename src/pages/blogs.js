@@ -2,12 +2,14 @@ import React from 'react';
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import BlogList from '../components/blogList'
+import mystyles from '../CSS-Files/blogs.module.scss'
 
 
 const BlogPage = () => {
   return (
     <Layout>
-      <div className="container">
+      <SEO></SEO>
+      <div className={mystyles.container}>
         <BlogList></BlogList>
       </div>
     </Layout>

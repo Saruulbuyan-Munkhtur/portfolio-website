@@ -5,8 +5,8 @@ import mystyles from '../CSS-Files/header.module.scss'
 import Dark from '../assets/dark2.svg'
 
 const Header = ({ siteTitle }) => (
-  <header>
-    <div className={mystyles.navbar}>
+  <header className={mystyles.navbar}>
+    <div className={mystyles.container}>
         <div><Link to="/" className={mystyles.Link}><h4 className="Name">{siteTitle}</h4></Link></div>
         <div><Link to="/aboutMe" className={mystyles.Link}>About Me</Link></div>
         <div><Link to="/portfolio" className={mystyles.Link}>Portfolio</Link></div>

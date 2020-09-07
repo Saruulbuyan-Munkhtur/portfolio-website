@@ -1,4 +1,5 @@
-header{
+
+.navbar {
   margin-bottom: 1.45rem;
   background-Color: #32A1E6;
   background-image: linear-gradient(120deg, #32A1E6 30%, #7ABFEA 91%);
@@ -8,22 +9,10 @@ header{
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  position: sticky;
 }
 
 
-
-.navbar {
-  // margin: 0;
-  // width: 100%;
-  // height: 256;
-  padding: 1.45rem 1.0875rem;
-  display: flex;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-}
 
 h4 {
   display: inline-block;
@@ -70,3 +59,15 @@ button {
 //   border-Bottom: 3px solid black;
   
 // }
+
+.container {
+  width: 95%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
