@@ -1,8 +1,11 @@
+@import './global.scss';
+
+
 
 .navbar {
   margin-bottom: 1.45rem;
-  background-Color: #5ad67d;
-  background-image: linear-gradient(120deg, #5ad67d 30%, #7ABFEA 91%);
+  background-Color: $color_prime;
+  background-image: linear-gradient(120deg, $color_prime 30%, $color_secondary 91%);
   border-bottom: 3px solid black;
   width: 100%;
   padding-right: 15px;

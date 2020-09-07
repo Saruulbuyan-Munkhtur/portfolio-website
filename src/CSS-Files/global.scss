@@ -1,0 +1,75 @@
+$font-primary: 'Roboto', sans-serif; 
+$font-secondary: Arial, Helvetica, sans-serif;
+
+$tera: #ffeb3b; 
+$dark:#000000; 
+$grey:#919191; 
+$light:#dddddd; 
+$white:#FFFFFF; 
+$color_white: #fff;
+$color_prime: #5ad67d;
+$color_secondary: #7ABFEA;
+$color_grey: #e2e2e2;
+$color_grey_dark: #a2a2a2;
+
+%btn {
+  padding: 10px;
+  color:#fff;
+  cursor: grab;
+  border: none;
+  box-shadow: blue;
+  font-size: 14px;
+  width: 150px;
+  margin: 5px 0;
+  text-align: center;
+  display: block;
+}
+
+@mixin  btn-background($btn-background) {
+  @extend %btn;
+  background-color: $btn-background;
+  &:hover {
+      background-color: lighten($btn-background,10%);
+  }
+}
+
+@function calculate-width ($col-span) {
+  @return 100% / $col-span 
+}
+
+@mixin box($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font-size($size, $base: 16) {
+  font-size: $size; // fallback for old browsers
+  font-size: ($size / $base) * 1rem;
+}
+
+
+@mixin screen($size) {
+    $desktop: "(min-width: 1024px)";
+    $tablet: "(min-width: 768px) and (max-width: 1023px)";
+    $mobile: "(max-width: 767px)";
+    @if $size == desktop {
+      @media only screen and #{$desktop} {
+        @content;
+      }
+    }
+    @else if $size == tablet {
+      @media only screen and #{$tablet} {
+        @content;
+      }
+    }
+    @else if $size == mobile {
+      @media only screen and #{$mobile} {
+        @content;
+      }
+    }
+    @else {
+      @media only screen and #{$size} {
+        @content;
+      }
+    }
+  }

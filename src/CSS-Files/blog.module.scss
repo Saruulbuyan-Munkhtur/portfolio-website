@@ -1,7 +1,29 @@
-.body {
-    width: 20%;
+@import './global.scss';
+
+
+
+
+.body div {
+    width: 85%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    a {
+        text-decoration: none;
+    }
 }
+
+.topics {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: end;
+
+
+    li {
+        @include btn-background($color_prime);
+        
+    }
+}
+
