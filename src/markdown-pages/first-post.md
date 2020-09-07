@@ -4,6 +4,7 @@ subtitle: "The first step is often the most crucial, but it’s also the step ma
 date: "2020-08-19"
 medium-link: "https://medium.com/@SaruulbuyanMunkhtur/why-ive-decided-to-publish-my-first-medium-post-today-and-why-it-matters-1db76f6f548d"
 topics: ['Life', 'Productivity', 'Motivation', 'Writing']
+excerpt: "Start by doing what’s necessary; then do what’s possible; suddenly you are doing the impossible."
 ---
 ![Photo by Jordan Wozniak on Unsplash](../images/sunset2.jpg)
 

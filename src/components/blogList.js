@@ -15,6 +15,7 @@ const BlogList = () => {
               date
               subtitle
               topics
+              excerpt
             }
             fields {
               slug

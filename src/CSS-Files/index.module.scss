@@ -1,7 +1,4 @@
-.Personal2 {
-  border-radius: 50cm;
-  border: 1px solid black;
-}
+
 
 .index {
   display: flex;
@@ -13,8 +10,8 @@
   background-image: '../images/sunset.jpg'
 }
 
-.Intro {
-  max-width:70;
+.intro {
+  width:70%;
   flex:1;
   width: 100%;
   padding-right: 15px;
@@ -27,15 +24,16 @@
   }
 }
 
-.Pic {
-  max-width:500; 
-  flex: 1; 
-  border-radius: 50px
-}
 
-.backgroundImage {
-  width: 100%;
-  background-position: bottom center;
-  background-repeat: repeat-y;
-  background-size: cover;
-}
+
+// .backgroundImage {
+//   width: 100%;
+//   background-position: bottom center;
+//   background-repeat: repeat-y;
+//   background-size: cover;
+          // .Pic {
+          //   max-width:500; 
+          //   flex: 1; 
+          //   border-radius: 50px
+          // }
+//}

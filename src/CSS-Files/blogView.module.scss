@@ -3,8 +3,10 @@
 
 $color_white: #fff;
 $color_prime: #5ad67d;
+$color_secondary: #7ABFEA;
 $color_grey: #e2e2e2;
 $color_grey_dark: #a2a2a2;
+
 
 .blogCard {
   display: flex;
@@ -58,7 +60,7 @@ $color_grey_dark: #a2a2a2;
     left: -100%;
     margin: auto;
     transition: left .2s;
-    background: rgba(#000, .6);
+    background: $color_secondary;
     color: $color_white;
     padding: 10px;
     width: 100%;
