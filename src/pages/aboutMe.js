@@ -9,8 +9,9 @@ const AboutMe = () => (
   <Layout>
     <SEO title="About Me" />
     <h1>Who am I?</h1>
-    <p>This is an about me page design to introduce myself briefly for anyone who visits. This is meant to spark interest in anyone who reads this.
-       It's supposed to increase my oppurtunities for freelance, jobs and other business oppurtunities.</p>
+    <p>
+      I am Fullstack Web Developer who is an extensive Auto-Didact. I consume a wide array of information on multiple disciplines ranging from Biology to History and Philosophy to Economics. I then process this information in order to output my unique insights that I've cultivated. This process helps me develop my ideas better all the while allowing others into my thought process.
+    </p>
   </Layout>
 )
 
