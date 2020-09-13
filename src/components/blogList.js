@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import mystyles from "../CSS-Files/blogList.module.scss"
+import mystyles from "../scss/blogList.module.scss"
 import BlogView from './blogView'
 
 const BlogList = () => {

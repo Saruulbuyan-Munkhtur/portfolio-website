@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 
-import mystyles from '../CSS-Files/blogView.module.scss'
+import mystyles from '../scss/blogView.module.scss'
 
 const BlogView = ({ edge }) => {
     console.log("tesst")

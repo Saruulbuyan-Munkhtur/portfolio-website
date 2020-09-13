@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 //import backgroundImage from "../components"
 //import Image from "../components/JSImages/image"
 import BlogList from '../components/blogList'
-import mystyles from '../CSS-Files/index.module.scss'
+import mystyles from '../scss/index.module.scss'
 
 const IndexPage = () => (
   <Layout>

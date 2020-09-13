@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
-import mystyles from "../CSS-Files/layout.module.scss"
+import mystyles from "../scss/layout.module.scss"
 
 
 

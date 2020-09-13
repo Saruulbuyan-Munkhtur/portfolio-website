@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 
-import mystyles from '../CSS-Files/footer.module.scss'
+import mystyles from '../scss/footer.module.scss'
 
 import Github from '../assets/github.svg'
 import Medium from '../assets/medium.svg'
