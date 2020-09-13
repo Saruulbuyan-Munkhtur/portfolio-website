@@ -2,14 +2,13 @@ import React from 'react';
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import BlogList from '../components/blogList'
-import mystyles from '../scss/blogs.module.scss'
-
+import '../scss/main.scss'
 
 const BlogPage = () => {
   return (
     <Layout>
       <SEO></SEO>
-      <div className={mystyles.container}>
+      <div className="container">
         <BlogList></BlogList>
       </div>
     </Layout>

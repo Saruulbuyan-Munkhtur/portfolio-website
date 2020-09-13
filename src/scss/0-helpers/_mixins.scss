@@ -1,45 +1,4 @@
-$font-primary: 'Roboto', sans-serif; 
-$font-secondary: Arial, Helvetica, sans-serif;
 
-$tera: #ffeb3b; 
-$dark:#000000; 
-$grey:#919191; 
-$light:#dddddd; 
-$white:#FFFFFF; 
-$off_white: #f8f8ff;
-$color_prime: #5ad67d;
-$color_secondary: #7ABFEA;
-$color_grey: #e2e2e2;
-$color_grey_dark: #a2a2a2;
-$green: #18AC4D;
-$spring_green: #34EF9E;
-$full_yellow: #EF9E34;
-$picton_blue: #3485EF;
-$electric_violet: #9E34EF;
-
-%btn {
-  padding: 10px;
-  color:#fff;
-  cursor: grab;
-  border: none;
-  box-shadow: blue;
-  font-size: 14px;
-  width: 150px;
-  margin: 5px 0;
-  text-align: center;
-  display: block;
-}
-
-%darkbg {
-	border: 1px  solid  #000000;
-	background: #101010;
-	box-shadow: 0  1px  5px  0  rgba(#404040, 0.6);
-}
-
-%flex_container {
-  flex: 1;
-  padding: 5, 5, 5, 5;
-}
 
 @mixin  btn-background($btn-background) {
   @extend %btn;
