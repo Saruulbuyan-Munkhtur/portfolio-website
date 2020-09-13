@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import mystyles from '../CSS-Files/blog.module.scss'
+import '../scss/main.scss'
 
 import Layout from '../components/layout'
 
@@ -27,7 +27,7 @@ const Blog = (props) => {
       <div>
         <h1>{props.data.markdownRemark.frontmatter.title}</h1>
         <span>{props.data.markdownRemark.frontmatter.date}</span>
-        <ul className={mystyles.topics}>
+        <ul className="topics">
               {props.data.markdownRemark.frontmatter.topics ? props.data.markdownRemark.frontmatter.topics.map((topic) => {
                 return (
                   <li>
@@ -37,7 +37,7 @@ const Blog = (props) => {
               }): props.data.markdownRemark.frontmatter.date}
         </ul>
       </div>
-      <div className={mystyles.body}>
+      <div className="body">
         <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
       </div>
     </Layout>

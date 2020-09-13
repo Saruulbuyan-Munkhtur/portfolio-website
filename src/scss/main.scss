@@ -1,0 +1,16 @@
+@import './0-helpers/_functions.scss';
+@import './0-helpers/_mixins.scss';
+@import './0-helpers/_structures.scss';
+@import './0-helpers/_variables.scss';
+
+@import './1-base/_base.scss';
+
+@import './2-layouts/footer.scss';
+@import './2-layouts/header.scss';
+
+@import './3-pages/blog.scss';
+@import './3-pages/index.scss';
+
+@import './4-components/blogList.scss';
+@import './4-components/blogs.scss';
+@import './4-components/blogView.scss';

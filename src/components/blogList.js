@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import mystyles from "../CSS-Files/blogList.module.scss"
+import '../scss/main.scss'
 import BlogView from './blogView'
 
 const BlogList = () => {
@@ -27,7 +27,7 @@ const BlogList = () => {
   `)
   console.log(data)
   return (
-    <div className={mystyles.list}>
+    <div className="list">
       {data.allMarkdownRemark.edges.map((edge) => {
         return (
           <BlogView edge={edge}/>
