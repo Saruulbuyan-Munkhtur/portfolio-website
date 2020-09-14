@@ -2,38 +2,50 @@
 
 footer {
   //background-color: #116466;
+  position: static;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  background-color: $color_prime;
+  padding: 0.5rem;
+  background-color: $prime_white;
+  display: flex;
   text-align: center;
-  @include flex-center;
-  align-items: flex-end;
-  color: $white;
+  justify-content: center;
+  align-items: center;
+  color: $text_black;
   text-Decoration: none;
-}
 
+  .phone {
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    vertical-align: middle;
 
+  }
 
-
-
-
-
-
-
-.copyright {
-  @extend %flex_container;
-  font-size: 14px;
-  font: $font-secondary;
-  a {
-    color: $off_white;
-    
-    &:hover {
-      color: $picton_blue;
+  .copyright {
+    @extend %flex_container;
+    font-size: 14px;
+    font: $font-secondary;
+    a {
+      color: $dark;
+      text-decoration: none;
+      &:hover {
+        color: $picton_blue;
+      }
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 //background-color: #116466;

@@ -15,12 +15,18 @@ const Footer = ({ siteTitle }) => (
     <div className="social">
       <Icons width='50px' />
     </div>
-    <div>
+    <div className="phone">
       <Link ><Phone /> +976 99728346</Link>
     </div>
     <div className="copyright">
-      {siteTitle} © {new Date().getFullYear()}, Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a>
-      <div>Icon2s made by <a href="https://www.flaticon2.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon2.com/" title="Flaticon2">www.flaticon2.com</a></div>
+      <span>
+        {siteTitle} © {new Date().getFullYear()}, 
+        Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby </a>
+      </span>
+      <br></br>
+      <span>
+        Icon2s made by <a href="https://www.flaticon2.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon2.com/" title="Flaticon2">www.flaticon2.com</a>
+      </span>
     </div>
     
   </footer>

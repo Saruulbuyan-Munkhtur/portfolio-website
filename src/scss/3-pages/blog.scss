@@ -6,7 +6,7 @@ article{
     
     .blog div {
 
-        width: 85%;
+        width: 65%;
         margin-top: 0;
         padding-right: 15px;
         padding-left: 15px;
@@ -27,15 +27,15 @@ article{
             font-style:italic;
             color: #555555;
             padding:1.2em 30px 1.2em 75px;
-            border-left:8px solid $color_prime ;
+            border-left:8px solid $prime_green ;
             line-height:1.6;
             position: relative;
-            background:#EDEDED;
+            background: $light;
     
             &:before {
                 font-family:Arial;
                 content: "\201C";
-                color:#78C0A8;
+                color: $prime_green;
                 font-size:4em;
                 position: absolute;
                 left: 10px;
@@ -46,7 +46,7 @@ article{
             }
             span {
             display:block;
-            color:#333333;
+            color: $prime_blue;
             font-style: normal;
             font-weight: bold;
             margin-top:1em;
@@ -54,7 +54,10 @@ article{
         }
     }
     .blogTitle {
-
+        align-self: center;
+        width: 70%;
+        margin-right: 0;
+        margin-left: 15%;
         div {
             margin-top: 1em;
             margin: auto;
@@ -85,7 +88,7 @@ article{
                     font-size: 16px;
                     text-align: center;
                     font-style:italic;
-                    color: #555555; 
+                    color: $prime_blue; 
                 }
             }
             h2 {
@@ -110,7 +113,7 @@ article{
                 flex-wrap: wrap;
                 
                 li {
-                    @include btn-background($color_prime);
+                    @include btn-background($prime_blue);
                     
                 }
             }
