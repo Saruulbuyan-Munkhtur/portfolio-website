@@ -16,20 +16,11 @@ footer {
 
 
 
-.icon2 {
-  max-width: 30px;
-  border: none;
-  padding: 10px;
-  &:hover {
-    flex-grow: 3;
-  }
-}
 
 
 
-.social {
-  @extend %flex_container;
-}
+
+
 
 .copyright {
   @extend %flex_container;
