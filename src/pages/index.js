@@ -18,8 +18,6 @@ const IndexPage = () => (
           I am a web and mobile app developer who has experience using React, React Native, Gatsby and GraphQL.
         </p>
       </div>
-      <BlogList />
-      
     </div>
   </Layout>
 )
