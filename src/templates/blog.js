@@ -12,6 +12,7 @@ export const query = graphql`
       title
       date
       topics
+      subtitle
     }
     html
   }
@@ -24,22 +25,27 @@ export const query = graphql`
 const Blog = (props) => {
   return (
     <Layout>
-      <div>
-        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-        <span>{props.data.markdownRemark.frontmatter.date}</span>
-        <ul className="topics">
-              {props.data.markdownRemark.frontmatter.topics ? props.data.markdownRemark.frontmatter.topics.map((topic) => {
-                return (
-                  <li>
-                    <Link to>{topic}</Link>
-                  </li>
-                )
-              }): props.data.markdownRemark.frontmatter.date}
-        </ul>
-      </div>
-      <div className="blog">
-        <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
-      </div>
+      <article>
+        <div className="blogTitle">
+          <div>
+              <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+              <h2>{props.data.markdownRemark.frontmatter.subtitle}</h2>
+              <p>{props.data.markdownRemark.frontmatter.date}</p>
+              <ul>
+                {props.data.markdownRemark.frontmatter.topics ? props.data.markdownRemark.frontmatter.topics.map((topic) => {
+                  return (
+                    <li>
+                      <Link to>{topic}</Link>
+                    </li>
+                  )
+                }): props.data.markdownRemark.frontmatter.date}
+              </ul>
+          </div>
+        </div>
+        <div className="blog">
+          <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
+        </div>
+      </article>
     </Layout>
   )
 }

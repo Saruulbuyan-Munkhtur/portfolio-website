@@ -1,8 +1,8 @@
 ---
-title: "Why we shouldn't be afraid of AI."
+title: "Why We Shouldn't Be Afraid of AI"
 subtitle: "Sometimes not changing is the worst outcome of all..."
-topics: ["Politics", "Economics", "Philosophy", "Geopolitics"]
-date: "2020-09-01"
+topics: ["Politics", "Economics", "Philosophy", "Geopolitics", "Literature", "Physics", "Sociology"]
+date: "September 1st, 2020"
 medium-link: "To be published..."
 excerpt: ""
 ---

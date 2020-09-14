@@ -2,7 +2,7 @@
 title: "Why we shouldn't be afraid of AI."
 subtitle: "Sometimes not changing is the worst outcome of all..."
 topics: ["Politics", "Economics", "Philosophy", "Geopolitics"]
-date: "2020-09-01"
+date: "September 19th, 2020"
 medium-link: "To be published..."
 ---
 
