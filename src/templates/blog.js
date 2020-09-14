@@ -37,7 +37,7 @@ const Blog = (props) => {
               }): props.data.markdownRemark.frontmatter.date}
         </ul>
       </div>
-      <div className="body">
+      <div className="blog">
         <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
       </div>
     </Layout>
