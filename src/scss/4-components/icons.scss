@@ -4,9 +4,11 @@
 
 
 .icon2 {
-    max-width: 50px;
+    display: inline;
+    max-width: 30px;
     border: none;
-    padding: 10px;
+    font-weight: 300;
+    margin-right: 8px;
     transition: all .2s ease-in-out; 
     &:hover {
       transform: scale(1.1); 

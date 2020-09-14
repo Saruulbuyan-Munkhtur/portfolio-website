@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 import '../scss/main.scss'
 
 import Layout from '../components/layout'
+import Icons from '../components/icons'
 
 
 export const query = graphql`
@@ -14,6 +15,7 @@ export const query = graphql`
       topics
       subtitle
     }
+    timeToRead
     html
   }
 }
@@ -30,7 +32,10 @@ const Blog = (props) => {
           <div>
               <h1>{props.data.markdownRemark.frontmatter.title}</h1>
               <h2>{props.data.markdownRemark.frontmatter.subtitle}</h2>
-              <p>{props.data.markdownRemark.frontmatter.date}</p>
+              <span>
+                <p>{props.data.markdownRemark.frontmatter.date}</p>
+                <p> · {props.data.markdownRemark.timeToRead} min read</p>
+              </span> 
               <ul>
                 {props.data.markdownRemark.frontmatter.topics ? props.data.markdownRemark.frontmatter.topics.map((topic) => {
                   return (
