@@ -12,13 +12,15 @@ import Phone from '../assets/phone.svg'
 
 const Footer = ({ siteTitle }) => (
   <footer>
-    <div>
+    <div className="social">
       <Icons width='50px' />
     </div>
-    <div><Link ><Phone /> +976 99728346</Link></div>
+    <div>
+      <Link ><Phone /> +976 99728346</Link>
+    </div>
     <div className="copyright">
-    {siteTitle} © {new Date().getFullYear()}, Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a>
-    <div>Icon2s made by <a href="https://www.flaticon2.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon2.com/" title="Flaticon2">www.flaticon2.com</a></div>
+      {siteTitle} © {new Date().getFullYear()}, Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <div>Icon2s made by <a href="https://www.flaticon2.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon2.com/" title="Flaticon2">www.flaticon2.com</a></div>
     </div>
     
   </footer>

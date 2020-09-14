@@ -8,11 +8,13 @@ import Twitter from '../assets/twitter.svg'
 import Instagram from '../assets/instagram.svg'
 import Gmail from '../assets/gmail.svg'
 
-export default function Icons({width}) {
-    return(
+import '../scss/main.scss'
+
+export default function Icons(width) {
+    return (
         <div className="social">
             <Link to="https://github.com/ErozionZeal"><Github  className="icon2" styles={{maxWidth: `${width}`}}/></Link>
-            <Link  to="https://medium.com/@SaruulbuyanMunkhtur"><Medium className="icon2" styles={{maxWidth: `${width}`}} styles={{maxWidth: `${width}`}}/></Link>
+            <Link  to="https://medium.com/@SaruulbuyanMunkhtur"><Medium className="icon2" styles={{maxWidth: `${width}`}}/></Link>
             <Link  to="https://www.linkedin.com/in/saruulbuyan-munkhtur-a82257185/"><LinkedIn className="icon2" styles={{maxWidth: `${width}`}}/></Link>
             <Link  to="https://www.instagram.com/?hl=en"><Instagram className="icon2" styles={{maxWidth: `${width}`}}/></Link>
             <Link  to="https://www.Twitter.com"><Twitter className="icon2" styles={{maxWidth: `${width}`}}/></Link>
