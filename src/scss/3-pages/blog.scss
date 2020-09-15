@@ -14,10 +14,7 @@ article{
     
     .blog div {
 
-        ::selection {
-            color: $white;
-            background: $prime_blue;
-        }
+        
         
         img{
             max-width: 100%;
@@ -65,7 +62,7 @@ article{
             }
         }
         p {
-            
+            font-size: 1em;
         }
     }
     .blogTitle {
