@@ -9,7 +9,7 @@
   margin: auto;
   padding: auto;
   z-index:100;
-  background: linear-gradient(90deg, #02aab0, #00cdac);
+  background: linear-gradient(90deg, $prime_green, #00cdac);
 
   //linear-gradient(45deg, #2193b0, #6dd5ed);
 
@@ -24,6 +24,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 10vh;
 
   .Link {
     color: $white;

@@ -32,8 +32,12 @@ body {
   color: $text_black;
   text-align: left;
   background-color: $prime_white;
+  height: 100%;
+  ::selection {
+    color: $white;
+    background: $prime_blue;
 }
-
+}
 
 
 

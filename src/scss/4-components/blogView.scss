@@ -19,7 +19,7 @@
   a {
     color: inherit;
     &:hover {
-      color: $prime_blue;
+      color: $prime_green;
     }
   }
   &:hover {
@@ -56,7 +56,7 @@
     left: -100%;
     margin: auto;
     transition: left .2s;
-    background: $prime_blue;
+    background: $prime_green;
     color: $white;
     padding: 10px;
     width: 100%;
@@ -145,7 +145,7 @@
         content: "";
         position: absolute;
         height: 5px;
-        background: $prime_blue;
+        background: $prime_green;
         width: 35px;
         top: -0.75rem;
         border-radius: 3px;

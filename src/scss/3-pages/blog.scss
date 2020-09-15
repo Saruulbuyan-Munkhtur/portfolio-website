@@ -3,17 +3,29 @@
 
 
 article{
+    width: 65%;
+    margin-top: 5vh;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    margin-right: auto;
+    margin-left: auto;
+
+    
     
     .blog div {
 
-        width: 65%;
-        margin-top: 0;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        ::selection {
+            color: $white;
+            background: $prime_blue;
+        }
+        
         img{
-            width:2000px;
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            &:hover {
+                box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+              }
         }
         a {
             text-decoration: none;
@@ -52,12 +64,15 @@ article{
             margin-top:1em;
             }
         }
+        p {
+            
+        }
     }
     .blogTitle {
         align-self: center;
-        width: 70%;
+        width: 100%;
         margin-right: 0;
-        margin-left: 15%;
+        margin-left: 0;
         div {
             margin-top: 1em;
             margin: auto;
@@ -104,19 +119,7 @@ article{
                 margin-inline-end: 0px;
             }
             
-            ul {
-                width: 70%;
-                display: inline-flex;
-                align-items: left;
-                justify-content: safe;
-                justify-items: left;
-                flex-wrap: wrap;
-                
-                li {
-                    @include btn-background($prime_blue);
-                    
-                }
-            }
+            
         }
     }
 }

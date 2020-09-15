@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import '../scss/main.scss'
 import BlogView from './blogView'
 
-const BlogList = () => {
+const BlogList = ({tag}) => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark {

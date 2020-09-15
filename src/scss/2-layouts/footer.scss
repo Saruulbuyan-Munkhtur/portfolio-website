@@ -2,18 +2,20 @@
 
 footer {
   //background-color: #116466;
-  position: static;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 0.5rem;
   background-color: $prime_white;
-  display: flex;
+  display: block;
   text-align: center;
   justify-content: center;
   align-items: center;
   color: $text_black;
   text-Decoration: none;
+  height: 10vh;
+
 
   .phone {
     text-align: center;
@@ -27,6 +29,7 @@ footer {
     @extend %flex_container;
     font-size: 14px;
     font: $font-secondary;
+    
     a {
       color: $dark;
       text-decoration: none;

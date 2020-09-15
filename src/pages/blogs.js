@@ -9,7 +9,7 @@ const BlogPage = () => {
     <Layout>
       <SEO></SEO>
       <div className="container">
-        <BlogList></BlogList>
+        <BlogList/>
       </div>
     </Layout>
   )
