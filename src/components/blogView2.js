@@ -5,12 +5,13 @@ import { Link } from 'gatsby'
 import '../scss/main.scss'
 
 const BlogView2 = ({ edge }) => {
-    console.log("tesst")
-    return (
-      <div className="blog-card">
+  console.log("tesst")
+  return (
+    <div className="blog-card">
         <div className="blog-card-header">
           <p>{edge.node.frontmatter.date}</p>
           <h2>{edge.node.frontmatter.title}</h2>
+          <Link to={`/blog/${edge.node.fields.slug}`}>Read More</Link>
         </div>
       </div>
     )
@@ -36,7 +37,6 @@ export default BlogView2;
     //     <h2>{edge.node.frontmatter.subtitle}</h2>
     //     <p> {edge.node.frontmatter.excerpt}</p>
     //     <p className="readMore">
-    //       <Link to={`/blog/${edge.node.fields.slug}`}>Read More</Link>
     //     </p>
     //   </div>
     // </div>

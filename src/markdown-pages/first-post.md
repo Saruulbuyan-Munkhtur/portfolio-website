@@ -6,7 +6,7 @@ medium-link: "https://medium.com/@SaruulbuyanMunkhtur/why-ive-decided-to-publish
 topics: ['Life', 'Productivity', 'Motivation', 'Writing']
 excerpt: "Start by doing what’s necessary; then do what’s possible; suddenly you are doing the impossible."
 ---
-![Photo by Jordan Wozniak on Unsplash](../images/sunset2.jpg)
+![Photo by Jordan Wozniak on Unsplash](../images/first-post/sunset2.jpg)
 
 Today, I made the goal for myself to publish my first Medium post on August 19th, 2020, before 11 AM, no excuses. I’ve decided for myself that no matter how inconsistent and how imperfect the article may be that I will publish it no matter what. By doing so, I am doing one of the hardest things in the world: starting something new, all the while exposing 
 yourself to criticism from others. As hard and as difficult as it may be it is a necessary step I must take.
