@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import '../scss/main.scss'
-import BlogView from './blogView'
+import BlogView2 from './blogView2'
 
 const BlogList = ({tag}) => {
   const data = useStaticQuery(graphql`
@@ -30,7 +30,7 @@ const BlogList = ({tag}) => {
     <div className="list">
       {data.allMarkdownRemark.edges.map((edge) => {
         return (
-          <BlogView edge={edge}/>
+          <BlogView2 edge={edge}/>
         )
       })}
     </div>

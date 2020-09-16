@@ -12,15 +12,6 @@ const BlogView = ({ edge }) => {
         <ul className="details">
           <li className="author"><Link to="#">Saruulbuyan Munkhtur</Link></li>
           <li className="date">{edge.node.frontmatter.date}</li>
-          <li className="tags">
-            <ul>
-              {edge.node.frontmatter.topics ? edge.node.frontmatter.topics.map((topic) => {
-                return (
-                  <li>{topic}</li>
-                )
-              }): edge.node.frontmatter.date}
-            </ul>
-          </li>
         </ul>
       </div>
       <div className="description">
