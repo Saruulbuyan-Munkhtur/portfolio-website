@@ -4,9 +4,11 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Head from "../components/head"
 
 const AboutMe = () => (
   <Layout>
+    <Head />
     <SEO title="About Me" />
     <h1>Who am I?</h1>
     <p>

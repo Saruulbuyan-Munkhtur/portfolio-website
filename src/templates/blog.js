@@ -4,6 +4,8 @@ import '../scss/main.scss'
 
 import Layout from '../components/layout'
 import TagList from '../components/tagList'
+import Head from "../components/head"
+
 //import Icons from '../components/icons'
 
 
@@ -28,6 +30,7 @@ export const query = graphql`
 const Blog = (props) => {
   return (
     <Layout>
+      <Head />
       <article>
         <div className="blogTitle">
           <div>

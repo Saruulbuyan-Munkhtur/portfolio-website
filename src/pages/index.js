@@ -2,7 +2,9 @@ import React from "react"
 //import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Head from "../components/head"
 import SEO from "../components/seo"
+
 //import backgroundImage from "../components"
 //import Image from "../components/JSImages/image"
 
@@ -15,6 +17,7 @@ import '../scss/main.scss'
 
 const IndexPage = () => (
   <Layout>
+    <Head />
     <SEO title="Home" />
     <section className="index">
       <div className="content">

@@ -1,5 +1,4 @@
 
- @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 
 
 article{
@@ -24,7 +23,9 @@ article{
                 box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
               }
         }
-        
+        img[title~="inline"] {
+            display: inline
+        }
         a {
             text-decoration: none;
             color: $link_blue;
