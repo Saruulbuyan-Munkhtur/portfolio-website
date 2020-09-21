@@ -7,8 +7,12 @@ export default function TagList({topics}) {
   return (
     <ul className="topics">
       {topics ? topics.map((topic) => {
+        console.log(topic)
         return (
-            <Link to='/blogs' state={{tag: {topic}}}>
+            <Link 
+              to='/blogs' 
+              state={{tag: {topic}}}
+              >
               <li className="tag">
               {topic}
               </li>

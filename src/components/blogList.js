@@ -25,16 +25,42 @@ const BlogList = ({tag}) => {
       }
     }
   `)
-  console.log(data)
-  return (
-    <div className="list">
-      {data.allMarkdownRemark.edges.map((edge) => {
-        return (
-          <BlogView2 edge={edge}/>
-        )
-      })}
-    </div>
-  )
+  console.log(typeof(data.allMarkdownRemark.edges))
+  const edges = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.topics.includes(tag))
+  
+  if(tag) {
+    return (
+      <div>
+        <div>
+          <h2>Blog Posts Relating to {tag}</h2>
+        </div>
+
+        <div className="list">
+          {edges.map((edge) => {
+            return (
+              <BlogView2 edge={edge}/>
+            )
+          })}
+        </div>
+      </div>
+    )
+  } else {
+    return (
+      <div>
+        <div>
+          <h2>Read </h2>
+        </div>
+  
+        <div className="list">
+          {edges.map((edge) => {
+            return (
+              <BlogView2 edge={edge}/>
+            )
+          })}
+        </div>
+      </div>
+    )
+  }
 }
 
-export default BlogList
+export default BlogList;

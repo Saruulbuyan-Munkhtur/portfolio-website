@@ -1,3 +1,24 @@
+@import './_variables.scss';
+
+%header-link {
+  color: $prime_green;
+  font-size: 0.7em;
+  border: none;
+  text-decoration: none;
+  font-weight:400;
+  transition:all .5s;
+  border:0 solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-weight: 200;
+
+  &:hover {
+    //color: #353634;
+    color: $title_black;
+    text-decoration: solid;
+  }
+}
+
 
 
 %btn {

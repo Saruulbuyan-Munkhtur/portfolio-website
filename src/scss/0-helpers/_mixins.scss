@@ -21,9 +21,7 @@
   }
 }
 
-@function calculate-width ($col-span) {
-  @return 100% / $col-span 
-}
+
 
 @mixin box($width, $height: $width) {
   width: $width;
@@ -179,4 +177,8 @@
 
 @mixin shadow {
   box-shadow: 0 3px 7px -1px rgba(#000, .1);
+}
+
+@mixin link-text {
+  @extend %header-link;
 }

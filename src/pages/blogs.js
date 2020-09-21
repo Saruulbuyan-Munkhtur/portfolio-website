@@ -7,13 +7,14 @@ import BlogList from '../components/blogList'
 import '../scss/main.scss'
 
 
-const BlogPage = () => {
+const BlogPage = ({ location }) => {
+  
   return (
     <Layout>
       <Head />
       <SEO></SEO>
       <div className="container">
-        <BlogList/>
+        {location.state.tag.topic? <BlogList tag={location.state.tag.topic}/>: <BlogList />}
       </div>
     </Layout>
   )

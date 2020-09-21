@@ -1,47 +1,47 @@
-
+@import '../0-helpers/structures';
 
 
 
 .navbar {
-  left:0;
-  right:0;
-  top:0;
-  margin: auto;
-  padding: auto;
-  z-index:100;
-  background: linear-gradient(90deg, $prime_green, $tertiary_green);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #eee;
+  box-shadow: 0 0 20px 0 #000;
+  margin: 0;
 
-  //linear-gradient(45deg, #2193b0, #6dd5ed);
+  div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    padding: 10px 15px 10px 50px;
 
-  //background-image: linear-gradient(120deg, $color_prime 30%, $color_secondary 91%);
-  line-height:2em;
-  text-align:right;
-  //border-bottom:3px solid rgba(0,0,0,.1);
-  //box-shadow: 5em;
-  word-spacing: normal;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-shrink: 0;
-  width: 100vw;
-  height: 10vh;
+    .Logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include link-text;
+    }
 
-  .Link {
-    color: $white;
-    font-size: 1em;
-    border: none;
-    text-decoration: none;
-    font-weight:400;
-    transition:all .5s;
-    border:0 solid transparent;
+    ul {
+      display: flex;
+      margin: 0;
+      li {
+        padding: 0;
+        list-style: none;
+        margin: 0 10px;
+        .Link{
+          @include link-text;
+        }
+        
+      }
+    }
+
   }
-  .Link:hover {
-    //color: #353634;
-    color: $title_black;
-    text-decoration: solid;
-  }
+
 
   
 }

@@ -6,12 +6,16 @@ import Dark from '../assets/dark2.svg'
 
 const Header = ({ siteTitle }) => (
   <header className="navbar">
-    <div><Link to="/" className="Link">{siteTitle}</Link></div>
-    <div><Link to="/aboutMe" className="Link">About Me</Link></div>
-    <div><Link to="/portfolio" className="Link">Portfolio</Link></div>
-    <div><Link to="/blogs" className="Link">My Blogs</Link></div>
-    <div><Link to="/contact" className="Link">Contact</Link></div>
-    <div><Link to="/"><Dark className="Dark"/></Link></div>
+    <div>
+      <Link to="/" className="Logo">{siteTitle}</Link>
+      <ul>
+        <li><Link to="/aboutMe" className="Link">About Me</Link></li>
+        <li><Link to="/portfolio" className="Link">Portfolio</Link></li>
+        <li><Link to="/blogs" className="Link">My Blogs</Link></li>
+        <li><Link to="/contact" className="Link">Contact</Link></li>
+        <li><Link to="/"><Dark className="Dark"/></Link></li>
+      </ul>
+    </div>
   </header>
 )
 
