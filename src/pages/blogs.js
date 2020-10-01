@@ -14,7 +14,7 @@ const BlogPage = ({ location }) => {
       <Head />
       <SEO></SEO>
       <div className="container">
-        {location.state.tag? <BlogList tag={location.state.tag.topic}/>: <BlogList />}
+        {location.state? <BlogList tag={location.state.tag.topic}/>: <BlogList />}
       </div>
     </Layout>
   )
