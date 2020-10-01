@@ -1,5 +1,14 @@
 $font-primary: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-$font-secondary: 'Merriweather', serif;
+
+$prime_white: #ebecf1;
+$subtitle_grey: #757575;
+$prime_green: #2e8b57;
+$secondary_green: #6ebfb5;
+$secondary_blue: #588BAE;
+$text_black: #212529;
+$title_black: #292929;
+
+
 
 $tera: #ffeb3b; 
 $dark:#000000; 
@@ -8,15 +17,17 @@ $light:#dddddd;
 $white:#FFFFFF; 
 
 
-$prime_white: #ebecf1;
 
-$prime_green: #2e8b57;
+
+
+
+
 //$prime_green: #24a19c;
-$secondary_green: #6ebfb5;
+
 $tertiary_green: #00cdac;
 
 $prime_blue: #3fe0d0;
-$secondary_blue: #588BAE;
+
 //$secondary_blue: #3282b8;
 $link_blue: #19c5cc;
 
@@ -24,12 +35,11 @@ $prime_orange: #e1755e;
 
 $prime_brown: #5d554b;
 
-$subtitle_grey: #757575;
+
 $color_grey: #e2e2e2;
 $color_grey_dark: #a2a2a2;
 
-$text_black: #212529;
-$title_black: #292929;
+
 
 
 $green: #18AC4D;
@@ -37,3 +47,5 @@ $spring_green: #34EF9E;
 $full_yellow: #EF9E34;
 $picton_blue: #3485EF;
 $electric_violet: #9E34EF;
+
+$font-secondary: 'Merriweather', serif;

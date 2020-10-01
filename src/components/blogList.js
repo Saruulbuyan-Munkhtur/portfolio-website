@@ -52,7 +52,7 @@ const BlogList = ({tag}) => {
         </div>
   
         <div className="list">
-          {edges.map((edge) => {
+          {data.allMarkdownRemark.edges.map((edge) => {
             return (
               <BlogView2 edge={edge}/>
             )
