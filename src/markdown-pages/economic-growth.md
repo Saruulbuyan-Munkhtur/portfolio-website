@@ -1,10 +1,11 @@
 ---
-title: "The One Concept of Economics You Must Learn to Understand How Society Works."
-subtitle: "There are certain concepts pertaining to the economy that you must learn first to understand how it works and why it works the way it does."
-date: "Sep 15"
-medium-link: "https://medium.com/@SaruulbuyanMunkhtur/the-one-concept-of-economics-you-must-learn-to-understand-how-society-works-88b31eb91a2c"
+title: The One Concept of Economics You Must Learn to Understand How Society Works.
+subtitle: There are certain concepts pertaining to the economy that you must learn first to understand how it works and why it works the way it does.
+date: Sep 15
+medium-link: https://medium.com/@SaruulbuyanMunkhtur/the-one-concept-of-economics-you-must-learn-to-understand-how-society-works-88b31eb91a2c
 topics: ['Economics', 'Nature', 'Life', 'Society', 'Capitalism']
 excerpt: ""
+thumbnail: ../images/sunset.jpg
 ---
 
 ![US Dollars inline](../images/economic-growth/money.jpeg)

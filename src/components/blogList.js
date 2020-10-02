@@ -16,6 +16,13 @@ const BlogList = ({tag}) => {
               subtitle
               topics
               excerpt
+              thumbnail {
+                childImageSharp {
+                  fixed(width: 200, height: 200) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
             }
             fields {
               slug

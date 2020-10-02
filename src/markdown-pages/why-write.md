@@ -1,9 +1,11 @@
 ---
-title: "Why we shouldn't be afraid of AI."
-subtitle: "Sometimes not changing is the worst outcome of all..."
+title: Why we shouldn't be afraid of AI.
+subtitle: Sometimes not changing is the worst outcome of all...
 topics: ["Politics", "Economics", "Philosophy", "Geopolitics"]
-date: "September 19th, 2020"
-medium-link: "To be published..."
+date: September 19th, 2020
+medium-link: To be published...
+excerpt: 
+thumbnail: ../images/sunset.jpg
 ---
 
 ![Photo by Jordan Wozniak on Unsplash](../images/sunset2.jpg)
