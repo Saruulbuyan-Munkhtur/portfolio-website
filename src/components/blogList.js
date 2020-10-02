@@ -18,7 +18,7 @@ const BlogList = ({tag}) => {
               excerpt
               thumbnail {
                 childImageSharp {
-                  fixed(width: 200, height: 200) {
+                  fixed(width: 400, height: 300) {
                     ...GatsbyImageSharpFixed
                   }
                 }

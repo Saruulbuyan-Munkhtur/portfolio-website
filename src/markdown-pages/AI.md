@@ -8,7 +8,7 @@ excerpt: ""
 thumbnail: ../images/sunset.jpg
 ---
 
-![Photo by Jordan Wozniak on Unsplash](../images/sunset2.jpg)
+![Photo by Jordan Wozniak on Unsplash](../images/first-post/sunset2.jpg)
 
 > "A pill shouldn't be worse than the disease it's trying to cure"  
 

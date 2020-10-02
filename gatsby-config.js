@@ -51,5 +51,18 @@ module.exports = {
         default: 12954607, // Github userid for default image
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 600,
+            },
+          },
+        ],
+      },
+    },
   ]
 }
