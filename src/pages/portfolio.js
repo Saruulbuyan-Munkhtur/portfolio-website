@@ -13,7 +13,7 @@ const ProjectsPage = ({ data }) => (
       title="Home"
       keywords={[`gatsby`, `application`, `react`, `portfolio`]}
     />
-    <h1>Projects</h1>
+    <h1 className="project-title">Projects</h1>
     <div className="project-list">
       {data.allProjectsJson.edges.map(project => (
         <div key={project.node.id} className="project-list__item">
@@ -49,7 +49,7 @@ export const projectsQuery = graphql`
           url
           thumbnailImage {
             childImageSharp {
-              fixed(width: 500, height: 400) {
+              fixed(width: 800, height: 600) {
                 ...GatsbyImageSharpFixed
               }
             }
