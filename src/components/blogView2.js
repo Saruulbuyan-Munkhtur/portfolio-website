@@ -11,17 +11,17 @@ const BlogView2 = ({ edge }) => {
     <div key={edge.node.id} className="blogView-item">
       <div className="blogView-thumbnail">
         <Link to={`/blog/${edge.node.fields.slug}`}>
-          <Img
+          <Img className="brighten"
             fixed={edge.node.frontmatter.thumbnail.childImageSharp.fixed}
           />
         </Link>
       </div>
       <div className="blogView-content">
         <div className="blogView-header">
-          <h2>{edge.node.frontmatter.title}</h2>
+          <h1>{edge.node.frontmatter.title}</h1>
         </div>
         <div className="blogView-subtitle">
-          <h4>{edge.node.frontmatter.subtitle}</h4>
+          <h2>{edge.node.frontmatter.subtitle}</h2>
         </div>
         <p>{edge.node.frontmatter.date}</p>
         <Link to={`/blog/${edge.node.fields.slug}`}>Read More</Link>

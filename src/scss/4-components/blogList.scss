@@ -1,12 +1,16 @@
 
+.blogList-title {
+  text-align: center;
+  margin-bottom: 5vh;
+  color: $title_black;
+}
 
 
-
-.list {
-  max-width: 960px;
+.blogList-body {
   align-self: center;
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  width: 70%;
+  margin: auto;
 }
 

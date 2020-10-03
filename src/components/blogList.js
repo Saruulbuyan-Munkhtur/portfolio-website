@@ -38,11 +38,11 @@ const BlogList = ({tag}) => {
   if(tag) {
     return (
       <div>
-        <div>
-          <h2>Blog Posts Relating to {tag}</h2>
+        <div className="blogList-title">
+          <h1 >Blog Posts Relating to {tag}</h1>
         </div>
 
-        <div className="list">
+        <div className="blogList-body">
           {edges.map((edge) => {
             return (
               <BlogView2 edge={edge}/>
@@ -54,11 +54,11 @@ const BlogList = ({tag}) => {
   } else {
     return (
       <div>
-        <div>
-          <h2>Read </h2>
+        <div className="blogList-title">
+          <h1> Read </h1>
         </div>
   
-        <div className="list">
+        <div className="blogList-body">
           {data.allMarkdownRemark.edges.map((edge) => {
             return (
               <BlogView2 edge={edge}/>
