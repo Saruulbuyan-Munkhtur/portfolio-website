@@ -25,6 +25,7 @@ const BlogPage = ({ location }) => {
   let alltopics = [];
   data.allMarkdownRemark.edges.map((edge) => {
     alltopics = alltopics.concat(edge.node.frontmatter.topics)
+    return 0;
   })
   
   return (
