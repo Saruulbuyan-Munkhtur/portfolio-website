@@ -5,10 +5,10 @@
   justify-content: safe;
   justify-items: left;
   flex-wrap: wrap;
-  Link {
-    text-decoration: none;
+  text-decoration: none;
+  a {
+  text-decoration: none;
   }
-  
 }
 .tag {
   @include btn-background($secondary_blue);
