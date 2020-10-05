@@ -54,9 +54,6 @@ const BlogList = ({tag}) => {
   } else {
     return (
       <div>
-        <div className="blogList-title">
-          <h1> Read </h1>
-        </div>
   
         <div className="blogList-body">
           {data.allMarkdownRemark.edges.map((edge) => {

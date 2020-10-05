@@ -8,24 +8,29 @@ import '../scss/main.scss'
 const BlogView2 = ({ edge }) => {
   console.log("tesst")
   return (
+
     <div key={edge.node.id} className="blogView-item">
-      <div className="blogView-thumbnail">
-        <Link to={`/blog/${edge.node.fields.slug}`}>
-          <Img className="brighten"
-            fixed={edge.node.frontmatter.thumbnail.childImageSharp.fixed}
-          />
-        </Link>
-      </div>
-      <div className="blogView-content">
-        <div className="blogView-header">
-          <h1>{edge.node.frontmatter.title}</h1>
+      <Link to={`/blog/${edge.node.fields.slug}`}>
+      
+        <div className="blogView-thumbnail">
+          <Link to={`/blog/${edge.node.fields.slug}`}>
+            <Img className="brighten"
+              fixed={edge.node.frontmatter.thumbnail.childImageSharp.fixed}
+            />
+          </Link>
         </div>
-        <div className="blogView-subtitle">
-          <h2>{edge.node.frontmatter.subtitle}</h2>
+        <div className="blogView-content">
+          <div className="blogView-header">
+            <h1>{edge.node.frontmatter.title}</h1>
+          </div>
+          <div className="blogView-subtitle">
+            <h2>{edge.node.frontmatter.subtitle}</h2>
+          </div>
+          <div>
+            <p>{edge.node.frontmatter.date}</p>
+          </div>
         </div>
-        <p>{edge.node.frontmatter.date}</p>
-        <Link to={`/blog/${edge.node.fields.slug}`}>Read More</Link>
-      </div>
+      </Link>        
     </div>
     )
 } 
