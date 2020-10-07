@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Eudaimonia Optimized`,
-    description: `Hi, this my portfolio website`,
-    author: `@SaruulMunkthur`,
+    description: `Portfolio Website for my Projects and Blogs`,
+    author: `Saruulbuyan Munkthur`,
   },
   plugins: [
     'gatsby-image',
@@ -36,9 +36,9 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Eudaimonia Optimized`,
-        short_name: `Optimonia`,
+        short_name: `Eudimized`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#66339`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
