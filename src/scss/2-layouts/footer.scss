@@ -1,12 +1,12 @@
 
 
-footer {
+.footer-main {
   //background-color: #116466;
   position: relative;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top: 20vh;
+  margin-top: 10vh;
   padding: 0.5rem;
   background-color: $prime_white;
   display: flex;
@@ -15,10 +15,17 @@ footer {
   align-items: center;
   color: $text_black;
   text-Decoration: none;
-  height: 10vh;
+  min-height: 10vh;
 
   .footer-social {
-    @extend %flex_container;
+    flex-direction: row;
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    vertical-align: middle;
+    min-width: 300px;
+
   }
 
   .footer-phone {
@@ -35,7 +42,7 @@ footer {
 
   .footer-copyright {
     @extend %flex_container;
-    font-size: 14px;
+    font-size: 10px;
     font: $font-secondary;
     
     .span {
@@ -55,27 +62,29 @@ footer {
 }
 
 
+@media (max-width: 640px) {
+  .footer-main {
+    flex-direction: column;
+  }
+  .footer-social {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1;
+    min-width: 100vw;
+  }
+  div {
+    margin-bottom: 1vh;
+  }
+}
 
+@media (min-width: 768px) {
 
+}
 
+@media (min-width: 1024px) {
 
+}
 
+@media (min-width: 1280px) {
 
-
-
-
-
-//background-color: #116466;
-// right: 0;
-// bottom: 0;
-// left: 0;
-// padding: 1rem;
-// background-color: #efefef;
-// text-align: center;
-// display: flex;
-// justify-Content: space-around;
-// flex-Direction: row;
-// flex-Wrap: nowrap;
-// align-items: flex-end;
-// color: #f8f8ff;
-// text-Decoration: none;
+}

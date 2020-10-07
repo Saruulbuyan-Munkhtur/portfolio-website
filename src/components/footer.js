@@ -11,7 +11,7 @@ import Icons from './icons'
 import Phone from '../assets/phone.svg'
 
 const Footer = ({ siteTitle }) => (
-  <footer>
+  <footer className="footer-main">
     <div className="footer-social">
       <Icons width='100px' />
     </div>
