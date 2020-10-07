@@ -2,7 +2,7 @@
 
 
 
-.navbar {
+.navbar-main {
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -11,38 +11,38 @@
   background-color: #eee;
   box-shadow: 0 0 20px 0 #000;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+  padding: 10px 15px 10px 50px;
 
-  div{
+  .navbar-logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    min-height: 40px;
-    padding: 10px 15px 10px 50px;
+    @include link-text;
+  }
 
-    .Logo {
-      display: flex;
+  ul {
+    display: flex;
+    margin: 0;
+    margin-right: 1vw;
+    li {
+      padding-bottom: 7px;
+      list-style: none;
+      margin: 0 10px;
       justify-content: center;
       align-items: center;
-      @include link-text;
-    }
 
-    ul {
-      display: flex;
-      margin: 0;
-      li {
-        padding-bottom: 7px;
-        list-style: none;
-        margin: 0 10px;
-        justify-content: center;
-        align-items: center;
-        .Link{
-          @include link-text;
-        }
-        
+      .navbar-link{
+        @include link-text;
       }
+      
     }
-
   }
+
+
 
 
   
@@ -62,13 +62,26 @@ button {
 }
 
 
-// header {
-//   margin-Bottom: 1.45rem;
-//   background-Color: #116466;
-//   background-Image: linear-gradient(120deg, #116466 60%, #ad6522 51%);
-//   height: 120px;
-//   border-Bottom: 3px solid black;
-  
-// }
+@media (min-width: 1025px) {
+	.navbar-main,
+	.navbar-list {
+		display: flex;
+	}
+	.navbar-main {
+		flex-direction: column;
+		align-items: center;
+		
+		margin: 0 auto;
+	}
+
+}
+
+@media (min-width: 769px) {
+	.navbar-main  {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
 
 
