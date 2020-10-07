@@ -18,7 +18,7 @@ const BlogList = ({tag}) => {
               excerpt
               thumbnail {
                 childImageSharp {
-                  fixed(width: 400, height: 300) {
+                  fixed(width: 450, height: 350) {
                     ...GatsbyImageSharpFixed
                   }
                 }
@@ -54,9 +54,6 @@ const BlogList = ({tag}) => {
   } else {
     return (
       <div>
-        <div className="blogList-title">
-          <h1> Read </h1>
-        </div>
   
         <div className="blogList-body">
           {data.allMarkdownRemark.edges.map((edge) => {

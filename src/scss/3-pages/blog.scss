@@ -3,7 +3,7 @@
 
 article{
     width: 65%;
-    margin-top: 5vh;
+    margin-top: 15vh;
     padding-right: 5vh;
     padding-left: 5vh;
     margin-right: auto;
@@ -13,7 +13,7 @@ article{
     
     .blog div {
 
-        
+        font-weight: 350;
         
         img{
             max-width: 100%;
@@ -28,7 +28,13 @@ article{
         }
         a {
             text-decoration: none;
-            color: $link_blue;
+            color: $secondary_blue;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        strong {
+            font-weight: 500;
         }
        
         blockquote {
@@ -38,7 +44,7 @@ article{
             font-family:Open Sans;
             font-style:italic;
             color: #555555;
-            padding:1.2em 30px 1.2em 75px;
+            padding:1.2em 20px 1.2em 45px;
             border-left:8px solid $prime_green ;
             line-height:1.6;
             position: relative;
@@ -63,9 +69,20 @@ article{
             font-weight: bold;
             margin-top:1em;
             }
+            p {
+                margin: 0;
+                text-align: center;
+            }
         }
         p {
             font-size: 1em;
+            margin-bottom: 1.9em;
+            text-align: left;
+        }
+        h1 h2 {
+            margin-top: 2.5em;
+            margin-bottom: 2.5em;
+            color: $title_black;
         }
     }
     .blogTitle {
@@ -100,10 +117,10 @@ article{
                     padding: 0; 
                     margin: 0;
                     font-weight: 100;
-                    font-size: 16px;
+                    font-size: 22px;
                     text-align: center;
                     font-style:italic;
-                    color: $prime_blue; 
+                    color: $prime_green; 
                 }
             }
             h2 {

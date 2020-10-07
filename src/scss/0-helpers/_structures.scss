@@ -24,7 +24,7 @@
 %btn {
   padding: 10px;
   color:#fff;
-  cursor: grab;
+  cursor: cell;
   border: none;
   box-shadow: blue;
   font-size: 14px;
@@ -33,6 +33,7 @@
   border-radius: 10px;
   text-align: center;
   display: block;
+  text-decoration: none;
 }
 
 %darkbg {

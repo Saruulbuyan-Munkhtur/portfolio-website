@@ -13,7 +13,10 @@ const ProjectsPage = ({ data }) => (
       title="Home"
       keywords={[`gatsby`, `application`, `react`, `portfolio`]}
     />
-    <h1 className="project-title">Projects</h1>
+    <div className="project-title">
+      <h1>My Programming Projects: </h1>
+      <h2>This page is still a work in progress</h2>
+    </div>
     <div className="project-list">
       {data.allProjectsJson.edges.map(project => (
         <div key={project.node.id} className="project-list__item">

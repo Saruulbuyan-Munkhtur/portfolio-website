@@ -24,7 +24,13 @@ const BlogPage = ({ location }) => {
 
   let alltopics = [];
   data.allMarkdownRemark.edges.map((edge) => {
-    alltopics = alltopics.concat(edge.node.frontmatter.topics)
+    edge.node.frontmatter.topics.map((topic) => {
+      if (!alltopics.includes(topic)){
+        alltopics.push(topic)
+      }
+      return 0;
+    })
+
     return 0;
   })
   
@@ -32,11 +38,13 @@ const BlogPage = ({ location }) => {
     <Layout>
       <Head />
       <SEO></SEO>
-      <div className="container">
+      <div className="blogs-main">
         <div className="blogs-tagList"> 
           <TagList topics={alltopics}/>
         </div>
-        {location.state? <BlogList tag={location.state.tag.topic}/>: <BlogList />}
+        <div className="blogs-blogList">
+          {location.state? <BlogList tag={location.state.tag.topic}/>: <BlogList />}
+        </div>
       </div>
     </Layout>
   )

@@ -11,7 +11,7 @@ import '../scss/main.scss'
 
 export default function Icons(width) {
     return (
-        <div className="social">
+        <div className="icons">
             <a href="https://github.com/ErozionZeal" target="_blank"><Github  className="icon2" styles={{maxWidth: `${width}`}}/></a>
             <a  href="https://medium.com/@SaruulbuyanMunkhtur" target="_blank"><Medium className="icon2" styles={{maxWidth: `${width}`}}/></a>
             <a  href="https://www.linkedin.com/in/saruulbuyan-munkhtur-a82257185/" target="_blank"><LinkedIn className="icon2" styles={{maxWidth: `${width}`}}/></a>

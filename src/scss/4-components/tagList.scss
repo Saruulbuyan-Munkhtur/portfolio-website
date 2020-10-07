@@ -1,14 +1,14 @@
 .topics {
-  width: 70%;
+  width: 75%;
   display: inline-flex;
   align-items: left;
   justify-content: safe;
   justify-items: left;
   flex-wrap: wrap;
-  Link {
-    text-decoration: none;
+  text-decoration: none;
+  a {
+  text-decoration: none;
   }
-  
 }
 .tag {
   @include btn-background($secondary_blue);

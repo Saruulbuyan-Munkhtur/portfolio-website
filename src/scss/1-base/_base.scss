@@ -32,12 +32,13 @@ body {
   color: #333;
   text-align: left;
   background-color: $prime_white;
-  
+  text-align: center;
 
   main {
-    margin-top: 20vh;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10vh;
   }
-
 
 
 
@@ -58,39 +59,6 @@ body {
 
 
 
-
-:root {
-  --blue: #17a2b8;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #ff5b69;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #6dc77a;
-  --teal: #20c997;
-  --cyan: #00c9a7;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --muted: #8492a6;
-  --footer: #202942;
-  --primary: #34bf95;
-  --secondary: #5a6d90;
-  --success: #2eca8b;
-  --info: #17a2b8;
-  --warning: #f17425;
-  --danger: #e43f52;
-  --light: #f8f9fc;
-  --dark: #3c4858;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-}
 
 
 
@@ -301,7 +269,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 h1 {
   margin-left: 0;
