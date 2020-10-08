@@ -21,7 +21,7 @@ const ProjectsPage = ({ data }) => (
       {data.allProjectsJson.edges.map(project => (
         <div key={project.node.id} className="project-list__item">
           <div className="project-list__thumbnail">
-            <Img fixed={project.node.thumbnailImage.childImageSharp.fixed} />
+            <Img fluid={project.node.thumbnailImage.childImageSharp.fluid} />
           </div>
           <div className="project-list__content">
             <h2>{project.node.title}</h2>
@@ -52,8 +52,8 @@ export const projectsQuery = graphql`
           url
           thumbnailImage {
             childImageSharp {
-              fixed(width: 800, height: 600) {
-                ...GatsbyImageSharpFixed
+              fluid(maxWidth: 800, maxHeight: 600) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
