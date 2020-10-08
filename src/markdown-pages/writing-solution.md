@@ -5,9 +5,9 @@ topics: ["Writing", "Life", "Problem Solving", "Thinking"]
 date: September 23rd, 2020
 medium-link: To be published...
 excerpt: 
-thumbnail: ../images/writing-solution/stress.jpg
+thumbnail: ../images/blog-post/stress.jpg
 ---
-![A man stressed out](../images/writing-solution/stress.jpg)
+![A man stressed out](../images/blog-post/stress.jpg)
 
 Life is full of problems and unmet desires. No one is disputing this fact. What we will be discussing today is how we should go about trying to solve these problems.
 
@@ -41,7 +41,7 @@ I never said it would be easy. I said that it will be effective.
 
 Writing is similar to running through a brick wall to escape from the building that’s on fire. It’s something you have to do, but as difficult as it may be, the most important outcome is whether you’ve done it at all. It doesn’t matter how eloquently you’ve ran through that door or the number of bones you’ve broken in doing so. Getting out of that building alive is the only thing that matters.
 
-![Writing Inspiration](../images/writing-solution/writing_quote.jpg)
+![Writing Inspiration](../images/blog-post/writing_quote.jpg)
 
 
 I’ve been trying to form a writing habit for years now, and the only advice that’s been truly effective is write a lot of words one after the other. It doesn’t matter if it’s utter garbage, as long as the words are written by you, you’ll see improvement and you’ll see results.

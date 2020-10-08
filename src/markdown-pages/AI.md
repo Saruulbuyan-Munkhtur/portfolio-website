@@ -5,10 +5,10 @@ topics: ["Politics", "Economics", "Philosophy", "Geopolitics", "Literature", "Ph
 date: September 1st, 2020
 medium-link: To be published...
 excerpt: ""
-thumbnail: ../images/sunset.jpg
+thumbnail: ../images/blog-post/ai_friendly.jpeg
 ---
 
-![Photo by Jordan Wozniak on Unsplash](../images/first-post/sunset2.jpg)
+![Photo by Jordan Wozniak on Unsplash](../images/blog-post/ai_friendly.jpeg)
 
 > "A pill shouldn't be worse than the disease it's trying to cure"  
 

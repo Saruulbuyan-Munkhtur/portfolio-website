@@ -5,10 +5,10 @@ date: Sep 15
 medium-link: https://medium.com/@SaruulbuyanMunkhtur/the-one-concept-of-economics-you-must-learn-to-understand-how-society-works-88b31eb91a2c
 topics: ['Economics', 'Nature', 'Life', 'Society', 'Capitalism']
 excerpt: ""
-thumbnail: ../images/sunset.jpg
+thumbnail: ../images/blog-post/money.jpeg
 ---
 
-![US Dollars inline](../images/economic-growth/money.jpeg)
+![US Dollars inline](../images/blog-post/money.jpeg)
 
 *The main goal of an economy is to provide the greatest amount of wellbeing to its participants. If it were to stop growing, these participants wouldn’t be all too happy about it.*
 
@@ -20,7 +20,7 @@ This is what we would call an axiom *(a statement or proposition which is regard
 
 # **Imagine an apple pie…**
 
-![Apple Pie inline](../images/economic-growth/pie.jpg)
+![Apple Pie inline](../images/blog-post/pie.jpg)
 
 Imagine that there’s an apple pie that comes every day. The apple pie is then sliced into slices of varying sizes. You are given a slice, but you see that it’s smaller than the slice of the person next to you (let’s call him Tod). You don’t feel satisfied with the slice you were given. You remain hungry, but there’s only one pie.
 
@@ -34,7 +34,7 @@ You notice that the pie hasn’t been growing at all in the past month. It must 
 
 It’s been a year since any growth and you even notice the pie shrinking slightly. You need more, want more. *There’s only one way your slice can get bigger:* someone else’s slice must become smaller. It’s a zero-sum game. *Tod’s slice of the pie is no longer something you’re willing to tolerate so easily.*
 
-![The French Revolution inline](../images/economic-growth/revolution.jpg)
+![The French Revolution inline](../images/blog-post/revolution.jpg)
 
 > In a zero-sum game, the problem is entirely one of distribution, not at all on of production — Kenneth Neal Waltz
 
@@ -50,7 +50,7 @@ From the subjectivist standpoint, everything is subjective and nothing matters. 
 
 A zero-sum type of environment leads to ideologies kin to mercantilism where resources are exploited and fought for endlessly. It’s far removed from the cooperation of globalism that we’ve grown custom to in the past few decades. You may think that the society we live in already has enough cut-throat competition, but it’s nothing compared to societal upheavals that can arise from long-term stagnant and uneven economies.
 
-![Federal Reserve inline](../images/economic-growth/federal_reserve.png)
+![Federal Reserve inline](../images/blog-post/federal_reserve.png)
 
 Society doesn’t exist; it’s a human construct made by self-interested individuals. Societies collapse when enough of these individuals get fed up with the status quo. An incompetent government along with a shrinking pie were the main contributors to both the French and Russian revolutions. This is a very simplified way to view these two historical events, but it’s clear that these two events wouldn’t have occurred had there been year on year economic growth.
 

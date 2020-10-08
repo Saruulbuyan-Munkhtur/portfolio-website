@@ -2,18 +2,15 @@
   width: 80%;
   display: flex;
   flex-flow: row wrap;
-  align-items: left;
-  justify-content: safe;
-  justify-items: left;
+  align-items: flex-start;
+  align-content: space-around;
+  justify-content: center;
   text-decoration: none;
   a {
   text-decoration: none;
-  }
-}
-.tag {
   @include btn-background($secondary_blue);
   text-decoration: none;
-  max-width: 130px;
-  min-width: 130px;
-  flex-shrink: 1;
+  //flex: 1 1 200px;
+  flex: 0 1 100px;
+  }
 }
