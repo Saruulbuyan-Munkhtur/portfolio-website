@@ -18,8 +18,8 @@ const BlogList = ({tag}) => {
               excerpt
               thumbnail {
                 childImageSharp {
-                  fixed(width: 450, height: 350) {
-                    ...GatsbyImageSharpFixed
+                  fluid(maxWidth: 200, maxHeight: 150) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }

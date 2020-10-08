@@ -15,7 +15,7 @@ const BlogView2 = ({ edge }) => {
         <div className="blogView-thumbnail">
           <Link to={`/blog/${edge.node.fields.slug}`}>
             <Img className="brighten"
-              fixed={edge.node.frontmatter.thumbnail.childImageSharp.fixed}
+              fluid={edge.node.frontmatter.thumbnail.childImageSharp.fluid}
             />
           </Link>
         </div>
@@ -26,7 +26,7 @@ const BlogView2 = ({ edge }) => {
           <div className="blogView-subtitle">
             <h2>{edge.node.frontmatter.subtitle}</h2>
           </div>
-          <div>
+          <div className="blogView-date">
             <p>{edge.node.frontmatter.date}</p>
           </div>
         </div>

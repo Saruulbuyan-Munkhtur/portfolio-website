@@ -1,10 +1,10 @@
 .topics {
   width: 80%;
-  display: inline-flex;
+  display: flex;
+  flex-flow: row wrap;
   align-items: left;
   justify-content: safe;
   justify-items: left;
-  flex-wrap: wrap;
   text-decoration: none;
   a {
   text-decoration: none;
@@ -15,4 +15,5 @@
   text-decoration: none;
   max-width: 130px;
   min-width: 130px;
+  flex-shrink: 1;
 }

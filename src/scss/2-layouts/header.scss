@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 40px;
-  padding: 10px 15px 10px 50px;
+  padding: 1.3vw 1.1vh 1.3vw 7vh;
 
   .navbar-logo {
     display: flex;
@@ -29,9 +29,9 @@
     margin: 0;
     margin-right: 1vw;
     li {
-      padding-bottom: 7px;
+      padding-bottom: 3px;
       list-style: none;
-      margin: 0 10px;
+      margin: 0 1vw;
       justify-content: center;
       align-items: center;
 
@@ -61,27 +61,33 @@ button {
   height: 50px;
 }
 
+@media(max-width: 500px){
+  .navbar-logo{
+    font-size: 10px;
+  }
+}
 
-@media (min-width: 1025px) {
-	.navbar-main,
-	.navbar-list {
-		display: flex;
-	}
-	.navbar-main {
-		flex-direction: column;
-		align-items: center;
+
+// @media (min-width: 1025px) {
+// 	.navbar-main,
+// 	.navbar-list {
+// 		display: flex;
+// 	}
+// 	.navbar-main {
+// 		flex-direction: column;
+// 		align-items: center;
 		
-		margin: 0 auto;
-	}
+// 		margin: 0 auto;
+// 	}
 
-}
+// }
 
-@media (min-width: 769px) {
-	.navbar-main  {
-		flex-direction: row;
-		justify-content: space-between;
-	}
+// @media (min-width: 769px) {
+// 	.navbar-main  {
+// 		flex-direction: row;
+// 		justify-content: space-between;
+// 	}
 
-}
+// }
 
 

@@ -1,19 +1,20 @@
 .blogView-item {
 	margin-bottom: 5vh;
 	color: white;
-	@media(max-width: 1200px){
+	min-height: 150px;
+	@media(max-width: 500px){
 		margin-bottom: 10vh;
 	}
   >a {
 		text-decoration: none;
 		display: flex;
 		flex-direction: row;
-		padding-right: 5vw;
+		padding-right: 3vw;
 
-		@media(max-width: 1200px){
+		@media(max-width: 500px){
 			flex-direction: column;
-			.blogView-thumbnail {
-				padding: auto;
+			.blogView-thumbnail{ 
+				margin: auto;
 				a{
 					justify-content: center;
 					justify-items: center;
@@ -21,6 +22,21 @@
 				img {
 					justify-self: center;
 					align-self: center;
+				}
+			}
+			.blogView-item .blogView-content {
+				width: 100%;
+				h1 {
+					font-size: 20px;
+					line-height: 24px;
+				}
+				h2 {
+					font-size: 14px;
+					line-height: 16px;
+				}
+				p {
+					font-size: 12px;
+					line-height: 14px;
 				}
 			}
 		}
@@ -32,23 +48,24 @@
 		}
     .blogView-content {
 			align-self: center;
-			width: 100%;
+			width: 60%;
 			margin-right: 0;
 			margin-left: 3vh;
 			text-align: center;
 
 			div {
-					margin-top: 1em;
+					margin-top: 0;
 					margin: auto;
 					margin-bottom: 0;
-					text-align: center;
+					text-align: left;
 					position: relative;
 					z-index: 1;
 					vertical-align: top;
-					padding: 0.43em 0em 0em 0em;
+					padding: 0.11em 0em 0em 0em;
 					
 					h1 {
-							font: 40px sans-serif;
+							font: 24px sans-serif;
+							line-height: 28px;
 							margin: 0;
 							font-weight: 600;
 							color: $title_black;
@@ -63,25 +80,35 @@
 							padding: 0; 
 							margin: 0;
 							font-weight: 100;
-							font-size: 20px;
+							font-size: 16px;
 							text-align: center;
 							font-style:italic;
 							color: $prime_green; 
 					}
 					h2 {
 							display: block;
-							text-align: center;
-							line-height: 24px;
+							text-align: left;
+							line-height: 22px;
 							color: $subtitle_grey;
-							font-size: 22px;
+							font-size: 18px;
 							font-weight: 300;
-							margin-block-start: 0.63em;
-							margin-block-end: 0.33em;
+							margin-block-start: 0.11em;
+							margin-block-end: 0.11em;
 							margin-inline-start: 0px;
 							margin-inline-end: 0px;
 					}
-					}
+				
+					
+				}
+				.blogView-date{
+					margin-top: 0;
+					padding-top: 0;
+				}
 			}
+	}
+	.blogView-thumbnail {
+		max-width: 300px;
+		width: 40%;
 	}
 }
 
@@ -98,4 +125,4 @@
   
   }
   
-  
+
