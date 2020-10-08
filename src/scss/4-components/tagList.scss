@@ -1,5 +1,5 @@
 .topics {
-  width: 75%;
+  width: 80%;
   display: inline-flex;
   align-items: left;
   justify-content: safe;
@@ -13,4 +13,6 @@
 .tag {
   @include btn-background($secondary_blue);
   text-decoration: none;
+  max-width: 130px;
+  min-width: 130px;
 }

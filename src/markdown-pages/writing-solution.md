@@ -25,17 +25,17 @@ By writing down your thoughts, it ends pesky thought loops by forcing your brain
 
 With a clearer view of your problems, you can start developing your thoughts further. This is a self-enforcing process that either culminates in the end with a solution or more often even more questions to answer that’ll consist of the following:
 
-1. Questions that can be answered by a simple google search: What
-2. Questions that are different, but on par with the complexity of the original:
-3. Questions that are much more deep-rooted that’ll require much more reflection, critical thinking, and dare I say soul searching.
+1. Questions that can be answered by a simple google search
+2. Questions that are different, but on par with the complexity of the original
+3. Questions that are much more deep-rooted that’ll require much more reflection, critical thinking, and dare I say soul searching
 
-**Either which way, having done this, you’ll be much better off than before.** Keep going after these problems one by one. Split them up. Search for their root causes. Don’t leave a stone unturned.
+*Either which way, having done this, you’ll be much better off than before.* Keep going after these problems one by one. Split them up. Search for their root causes. Don’t leave a stone unturned.
 
 # **How to actually start writing**
 
 Writing is difficult, there’s no question there. However, it is in the pain of facing said difficulty where we’re able to start growing. It’ll be a difficult hurdle to overcome, but nothing worthwhile was ever easy.
 
-# “Writing is thinking. To write well is to think clearly. That’s why it’s so hard.” —**David McCullough**
+> “Writing is thinking. To write well is to think clearly. That’s why it’s so hard.” —**David McCullough**
 
 I never said it would be easy. I said that it will be effective.
 

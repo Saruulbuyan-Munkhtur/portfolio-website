@@ -31,20 +31,17 @@ const Blog = (props) => {
   return (
     <Layout>
       <Head />
-      <article>
-        <div className="blogTitle">
+      <article className="blog-main">
+        <div className="blog-blogTitle">
           <div>
               <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-              <h2>{props.data.markdownRemark.frontmatter.subtitle}</h2>
-              <span>
-                <p>{props.data.markdownRemark.frontmatter.date}</p>
-                <p> · {props.data.markdownRemark.timeToRead} min read</p>
-              </span> 
-              <TagList topics={props.data.markdownRemark.frontmatter.topics}/>
+              <h2>{props.data.markdownRemark.frontmatter.subtitle} <span>{props.data.markdownRemark.frontmatter.date} · {props.data.markdownRemark.timeToRead} min read </span></h2>
+              {/* <p>{props.data.markdownRemark.frontmatter.date} · {props.data.markdownRemark.timeToRead} min read</p> */}
+              <TagList className="blog-tagList" topics={props.data.markdownRemark.frontmatter.topics}/>
           </div>
         </div>
-        <div className="blog">
-          <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
+        <div className="blog-content"
+          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}>
         </div>
       </article>
     </Layout>
