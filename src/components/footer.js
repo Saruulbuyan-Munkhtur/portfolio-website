@@ -16,7 +16,7 @@ const Footer = ({ siteTitle }) => (
       <Icons width='100px' />
     </div>
     <div className="footer-phone">
-      <Link ><Phone /> +976 99728346</Link>
+      <a href="tel: +976 99723867"><Phone /> +976 99728346</a>
     </div>
     <div className="footer-copyright">
       <span>

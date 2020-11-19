@@ -25,6 +25,7 @@
         z-index: 1;
         vertical-align: top;
         padding: 0.43em 0em 0em 0em;
+        height: 80vh;
         
         h1 {
             font: 40px sans-serif;
@@ -73,8 +74,30 @@
     }
     .homePage-SVG {
         max-width: 400px;
+        max-height: 400px;
     }
+    
 }
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.react {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
 
 
 
