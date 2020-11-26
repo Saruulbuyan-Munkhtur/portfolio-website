@@ -5,7 +5,7 @@ import React from "react"
 
 import '../scss/main.scss'
 
-import Icons from './icons'
+import Icons from '../components/icons'
 
 
 import Phone from '../assets/phone.svg'

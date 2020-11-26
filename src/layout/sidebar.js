@@ -1,6 +1,6 @@
 import React from 'react'
-import Icons from './icons'
-import Avatar from './avatar'
+import Icons from '../components/icons'
+import Avatar from '../components/avatar'
 
 const Sidebar = () => {
   return (

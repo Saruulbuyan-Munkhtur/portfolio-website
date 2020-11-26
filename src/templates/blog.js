@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql} from 'gatsby'
 import '../scss/main.scss'
 
-import Layout from '../components/layout'
+import Layout from '../layout/layout'
 import TagList from '../components/tagList'
-import Head from "../components/head"
+import Head from "../meta/head"
 
 //import Icons from '../components/icons'
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Head from "../components/head"
+import Layout from '../layout/layout'
+import SEO from '../meta/seo'
+import Head from "../meta/head"
 import { useStaticQuery, graphql } from "gatsby"
 import BlogList from '../components/blogList'
 import TagList from '../components/tagList'

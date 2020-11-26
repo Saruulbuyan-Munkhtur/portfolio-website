@@ -1,9 +1,10 @@
 import React from "react"
 //import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Head from "../components/head"
-import SEO from "../components/seo"
+import Layout from "../layout/layout"
+import Head from "../meta/head"
+import SEO from "../meta/seo"
+import Quote from "../components/quote"
 
 import Code_Thinking from "../assets/code_thinking.svg"
 import Task_Insertion from "../assets/task_insertion.svg"
@@ -60,6 +61,9 @@ const IndexPage = () => (
               I"m also an auto-didact and an aspiring polymath. I believe that information and knowledge are fully available to those who want to learn. My blogs are meant to help on my journey of learning and hopefully you can find some use in them as well.
             </p>
         </div>
+      </section>
+      <section>
+        <Quote data={" "}/>
       </section>
       <section className="homePage-index">
         <div className="homePage-illustration">

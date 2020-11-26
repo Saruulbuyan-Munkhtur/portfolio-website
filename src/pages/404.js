@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Head from "../components/head"
+import Layout from "../layout/layout"
+import SEO from "../meta/seo"
+import Head from "../meta/head"
 
 
 const NotFoundPage = () => (
