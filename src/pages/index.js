@@ -4,7 +4,7 @@ import React from "react"
 import Layout from "../layout/layout"
 import Head from "../meta/head"
 import SEO from "../meta/seo"
-import Quote from "../components/quote"
+import QuoteList from "../components/quoteList"
 
 import Code_Thinking from "../assets/code_thinking.svg"
 import Task_Insertion from "../assets/task_insertion.svg"
@@ -63,7 +63,7 @@ const IndexPage = () => (
         </div>
       </section>
       <section>
-        <Quote data={" "}/>
+        <QuoteList />
       </section>
       <section className="homePage-index">
         <div className="homePage-illustration">
