@@ -1,8 +1,7 @@
 .quote-body {
-  border-radius: 5%;
-  border: 2px solid #111111;
   width: 25vw;
-  height: 50vh;
+  border-right: 2px solid $text_black; 
+  flex: 1;
 }
 
 .quoteList-header {
@@ -19,16 +18,24 @@
 }
 
 .quote-content {
+  border-top: 2px solid $prime_green;
   text-align: left;
   font-size: 14pt;
   align-self: center;
   justify-self: center;
+  margin-top: 3vh;
+  .quote-author{
+    text-align: center;
+    text-decoration: underline;
+  }
 }
 
 .quoteList-body {
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row nowrap;
   display: flex;
   justify-content: space-around;
-
+  :last-child {
+    border-right: none;
+  }
 }

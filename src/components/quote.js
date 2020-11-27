@@ -7,8 +7,8 @@ const Quote = ({quote}) => {
     <div className='quote-body'>
       <blockquote>
         <div className="quote-content">
-          <p>{quote.quote}</p>
-          <p> - {quote.author}</p>
+          <p className="quote-quote">{quote.quote}</p>
+          <p className="quote-author"> - {quote.author}</p>
         </div>
       </blockquote>
     </div>
