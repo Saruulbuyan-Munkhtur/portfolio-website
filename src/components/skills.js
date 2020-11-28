@@ -48,7 +48,7 @@ const Skills = () => {
           </div>
         </div>
         <div class="skill">
-          <p>JAVASCRIP</p>
+          <p>JAVASCRIPT</p>
           <div class="skill-bar skill4 wow slideInLeft animated">
             <span class="skill-count4">65%</span>
           </div>
