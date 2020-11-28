@@ -12,7 +12,7 @@ const Landing = () => {
         <Code_Thinking className="homePage-SVG"/>
       </div> 
       <div className="homePage-content">
-          <h1>I"m Saruulbuyan Munkhtur. Welcome to my Blog and Portfolio.</h1>
+          <h1>I'm Saruulbuyan Munkhtur.. Welcome to my Blog and Portfolio.</h1>
           <h2>
             I am React TypeScript fullstack web developer. I also have experience in Data Science and Competitive Coding.
           </h2>

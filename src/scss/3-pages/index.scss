@@ -1,5 +1,5 @@
 
-.homePage-index {
+.homePage-landing {
     align-self: center;
     text-align: center;
     width: 70%;
@@ -13,9 +13,11 @@
     margin-top: 0vh;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    overflow: hidden;
-    background-color: $background_white;
-    
+}
+.homePage-quotes {
+    border-top: 5px solid $prime_green;
+    border-bottom: 5px solid $prime_green;
+    background-color: azure;
 }
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
