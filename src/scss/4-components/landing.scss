@@ -1,0 +1,67 @@
+.homePage-content {
+  margin-top: 1em;
+  margin: auto;
+  margin-bottom: 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  vertical-align: top;
+  padding: 0.43em 0em 0em 0em;
+  height: 60vh;
+  
+  h1 {
+      font: 40px sans-serif;
+      margin: 0;
+      font-weight: 600;
+      color: $title_black;
+      box-sizing: inherit;
+  }
+  p {
+      margin: auto;
+      padding: auto;
+      margin-top: 0;
+      display: block;
+      a {
+          display: inline;
+          padding: 0; 
+          margin: 0;
+          font-weight: 100;
+          font-size: 16px;
+          text-align: center;
+          font-style:italic;
+          color: $prime_blue; 
+      }
+  }
+  h2 {
+      display: block;
+      text-align: center;
+      line-height: 24px;
+      color: $subtitle_grey;
+      font-size: 22px;
+      font-weight: 300;
+      margin-block-start: 0.63em;
+      margin-block-end: 0.33em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+    
+    
+}
+
+.react {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
+
+.homePage-illustration {
+  max-width: 700px;
+  max-height: 600px;
+  margin: auto;
+  // position: relative;
+  // padding-left: 0vw;
+  // border-left: 8px solid $prime_green;
+  .homePage-SVG {
+      max-width: 700px;
+      max-height: 400px;
+  }
+}
