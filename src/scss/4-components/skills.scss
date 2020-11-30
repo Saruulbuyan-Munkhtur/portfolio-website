@@ -1,7 +1,36 @@
+.skills-body{
+  align-self: center;
+	text-align: center;
+	max-width: 80vw;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-flow: row-reverse nowrap;
+}
+
+
+
+.skills-SVG {
+  max-width: 40vw;
+  max-height: 80vh;
+  margin: auto;
+  flex: 1;
+}
+
+.skills-illustration {
+  max-width: 40vw;
+}
+
+
+
 .skills-wrapper{
-  width: 800px;
+  max-width: 40vw;
+  max-height: 60vh;
   font-family: 'Roboto', sans-serif;
   margin:0 auto;
+  position: relative;
+  flex: 1;
   }
   .skill {
     margin-bottom: 35px;
@@ -10,10 +39,11 @@
     
   }
   .skill > p {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16pt;
+    font-weight: 400;
     color: #1a1716;
     margin: 0;
+    text-align: left;
   }
   .skill:before{
     width: 100%;
@@ -47,8 +77,7 @@
     font-weight: 500;
   }
   .skill-bar {
-      position: relative;
-    
+    position: relative;
   }
 
   .skill1 .skill-count1 {

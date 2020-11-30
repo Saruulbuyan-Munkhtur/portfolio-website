@@ -8,11 +8,11 @@ import Code_Thinking from "../assets/relaxing.svg"
 const Landing = () => {
   return (
     <section>
-      <div className="homePage-illustration">
-        <Code_Thinking className="homePage-SVG"/>
+      <div className="landing-illustration">
+        <Code_Thinking className="landing-SVG"/>
       </div> 
       <div className="homePage-content">
-          <h1>I'm Saruulbuyan Munkhtur.. Welcome to my Blog and Portfolio.</h1>
+          <h1>I'm Saruulbuyan Munkhtur. Welcome to my Blog and Portfolio.</h1>
           <h2>
             I am React TypeScript fullstack web developer. I also have experience in Data Science and Competitive Coding.
           </h2>

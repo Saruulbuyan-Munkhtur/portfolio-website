@@ -23,7 +23,7 @@ const IndexPage = () => (
       <section className="homePage-quotes">
         <QuoteList />
       </section>
-      <section>
+      <section className="homePage-skills">
         <Skills />
       </section>
     </div>

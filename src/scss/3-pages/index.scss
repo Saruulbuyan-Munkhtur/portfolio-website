@@ -15,6 +15,7 @@
     flex-wrap: wrap;
 }
 .homePage-quotes {
+		margin-top: 30vh;
     border-top: 5px solid $prime_green;
     border-bottom: 5px solid $prime_green;
     background-color: azure;
@@ -28,11 +29,8 @@
   background-color: #ddd; /* Grey background */
 }
 
-.skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+.homePage-skills {
+	margin-top: 30vh;
 }
 
 

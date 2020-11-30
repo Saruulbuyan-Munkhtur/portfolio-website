@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../scss/main.scss';
 
-import Choice from "../assets/choice.svg"
+import Choice from "../assets/code_thinking.svg"
 // import Task_Insertion from "../assets/task_insertion.svg"
 // import Login_Door from "../assets/login_door.svg"
 // import Detailed_Analysis from "../assets/detailed_analysis.svg"
@@ -24,43 +24,44 @@ import Typescript from "../assets/typescript.svg"
 
 const Skills = () => {
   return (
-    <section className="homePage-index">
-      <div className="homePage-illustration">
-        <Choice className="homePage-SVG"/>
+    <section className="skills-body">
+      <div className="skills-illustration">
+        <Choice className="skills-SVG"/>
       </div> 
       <div className="skills-wrapper">
+        <h3>My Programming Experience</h3>
         <div class="skill">
-          <p>HTML5</p>
+          <p>REACT</p>
           <div class="skill-bar skill1 wow slideInLeft animated">
               <span class="skill-count1">95%</span>
           </div>
         </div>
         <div class="skill">
-          <p>CSS3</p>
+          <p>EXPRESS and NODE JS</p>
           <div class="skill-bar skill2 wow slideInLeft animated">
             <span class="skill-count2">85%</span>
           </div>
         </div>
         <div class="skill">
-          <p>JQUERY</p>
+          <p>SCSS</p>
           <div class="skill-bar skill3 wow slideInLeft animated">
             <span class="skill-count3">75%</span>
           </div>
         </div>
         <div class="skill">
-          <p>JAVASCRIPT</p>
+          <p>MONGODB</p>
           <div class="skill-bar skill4 wow slideInLeft animated">
             <span class="skill-count4">65%</span>
           </div>
         </div>
         <div class="skill">
-          <p>PHP</p>
+          <p>GATSBY JS</p>
           <div class="skill-bar skill5 wow slideInLeft animated">
             <span class="skill-count5">80%</span>
           </div>
         </div>
         <div class="skill">
-          <p>WORDPRESS</p>
+          <p>GraphQL</p>
           <div class="skill-bar skill6 wow slideInLeft animated">
             <span class="skill-count6">90%</span>
           </div>

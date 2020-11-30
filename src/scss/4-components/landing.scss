@@ -1,16 +1,16 @@
 .homePage-content {
-  margin-top: 1em;
+  margin-top: 3em;
   margin: auto;
-  margin-bottom: 0;
+  margin-bottom: 3em;
   text-align: center;
   position: relative;
   z-index: 1;
   vertical-align: top;
   padding: 0.43em 0em 0em 0em;
-  height: 60vh;
+  
   
   h1 {
-      font: 40px sans-serif;
+      font: 28px sans-serif;
       margin: 0;
       font-weight: 600;
       color: $title_black;
@@ -53,15 +53,21 @@
 .js {width: 65%; background-color: #f44336;} /* Red */
 .php {width: 60%; background-color: #808080;} /* Dark Grey */
 
-.homePage-illustration {
-  max-width: 700px;
-  max-height: 600px;
+.landing-illustration {
+  max-width: 100vw;
+  max-height: 50vh;
   margin: auto;
+  margin-top: 8vh;
   // position: relative;
   // padding-left: 0vw;
   // border-left: 8px solid $prime_green;
-  .homePage-SVG {
-      max-width: 700px;
-      max-height: 400px;
+  .landing-SVG {
+    max-width: 50vw;
+    max-height: 45vh;
+    background: rgb(9, 0, 172);
+    background: linear-gradient(0deg,#53ae00 28%, rgba(0,182,184,1) 28%, rgba(0,212,255,1) 100%);
+    border-radius: 10%;
+    border: 2px solid #808080;
+    opacity: 95%;
   }
 }
