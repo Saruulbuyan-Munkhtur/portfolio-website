@@ -54,10 +54,10 @@ module.exports = {
         name: `Eudaimonia Optimized`,
         short_name: `Eudimized`,
         start_url: `/`,
-        background_color: `#66339`,
-        theme_color: `#663399`,
+        background_color: `#eeecf1`,
+        theme_color: `#2e8b57`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/social_app.png`, // This path is relative to the root of the site.
       },
     },
     {
