@@ -6,6 +6,8 @@
   overflow: hidden;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 10;
   background-color: #eee;
@@ -16,6 +18,9 @@
   align-items: center;
   min-height: 40px;
   padding: 1.3vw 1.1vh 1.3vw 7vh;
+  transition: transform 400ms cubic-bezier(.25,.37,.17,.96);
+  transition: all 0.3s ease-out;
+} 
 
   .navbar-logo {
     display: flex;
@@ -42,15 +47,6 @@
     }
   }
 
-
-
-
-  
-}
-
-
-
-
 button {
   background: none;
   border: none;
@@ -66,6 +62,19 @@ button {
     font-size: 10px;
   }
 }
+
+
+/* When header is not in viewport we hide it */
+// .navbar-main[data-scroll="out"] {
+//   transform: translatey(-100%);
+// }
+
+/* When moving up and header we show it */
+.navbar-main:not([data-scroll-dir-y="-1"]) {
+  transform: translatey(50);
+}
+
+
 
 
 // @media (min-width: 1025px) {

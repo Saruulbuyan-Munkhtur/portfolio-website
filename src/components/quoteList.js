@@ -20,7 +20,8 @@ const QuoteList = ({tag}) => {
   `)
   let quotes = getRandom(data.allQuotesJson.edges, 3)
   setInterval(function(){
-    let quotes = getRandom(data.allQuotesJson.edges, 3)}, 1000);
+    let quotes = getRandom(data.allQuotesJson.edges, 3)
+  }, 1000);
 
 
   return (

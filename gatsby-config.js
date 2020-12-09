@@ -11,6 +11,22 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     `gatsby-transformer-remark`,
+    `gatsby-plugin-page-transitions`,
+    `gatsby-plugin-transition-link`,
+
+    // `gatsby-plugin-layout`,
+    // {
+    //   resolve: `gatsby-plugin-layout`,
+    //   options: {
+    //     component: require.resolve(`${__dirname}/src/layout/layout.js`),
+    //   },
+    // 
+    {
+      resolve: 'gatsby-plugin-page-transitions',
+      options: {
+        transitionTime: 500
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
