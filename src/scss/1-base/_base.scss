@@ -75,22 +75,11 @@ body {
 // * * * * * * * * { background-color: rgba(0,255,0,.2); }
 // * * * * * * * * * { background-color: rgba(0,0,255,.2); }
 
-
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
+* {
+  box-sizing: border-box;
 }
+
+
 audio,
 canvas,
 progress,
