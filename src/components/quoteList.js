@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import '../scss/main.scss'
-import Quote from './quote' 
+import Quote from './quote'
 import getRandom from '../utils/utils'
 
 const QuoteList = ({tag}) => {
@@ -22,7 +22,6 @@ const QuoteList = ({tag}) => {
   setInterval(function(){
     let quotes = getRandom(data.allQuotesJson.edges, 3)
   }, 1000);
-
 
   return (
     <div className="quotes-section">

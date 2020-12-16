@@ -12,15 +12,15 @@ import Choice from "../assets/code_thinking.svg"
 // import Id_Card from "../assets/id_card.svg"
 // import Relaxing from "../assets/relaxing.svg"
 
-import Cplusplus from "../assets/cplusplus.svg"
-import React_SVG from "../assets/react.svg"
-import Javascript from "../assets/javascript.svg"
-import Firebase from "../assets/firebase.svg"
-import Anaconda from "../assets/anaconda.svg"
-import Gatsby_SVG from "../assets/gatsby.svg"
-import Googleanalytics from "../assets/googleanalytics.svg" 
-import Graphql_SVG from "../assets/graphql.svg"
-import Typescript from "../assets/typescript.svg"
+// import Cplusplus from "../assets/cplusplus.svg"
+// import React_SVG from "../assets/react.svg"
+// import Javascript from "../assets/javascript.svg"
+// import Firebase from "../assets/firebase.svg"
+// import Anaconda from "../assets/anaconda.svg"
+// import Gatsby_SVG from "../assets/gatsby.svg"
+// import Googleanalytics from "../assets/googleanalytics.svg" 
+// import Graphql_SVG from "../assets/graphql.svg"
+// import Typescript from "../assets/typescript.svg"
 
 const Skills = () => {
   return (
@@ -29,7 +29,7 @@ const Skills = () => {
         <Choice className="skills-SVG"/>
       </div> 
       <div className="skills-wrapper">
-        <h3>My Programming Experience</h3>
+        <h1 data-spliting>My Programming Experience</h1>
         <div class="skill">
           <p>REACT</p>
           <div class="skill-bar skill1 wow slideInLeft animated">

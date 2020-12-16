@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../scss/main.scss';
 
-import Code_Thinking from "../assets/relaxing.svg"
+//import Code_Thinking from "../assets/relaxing.svg"
 
 
 const Landing = () => {

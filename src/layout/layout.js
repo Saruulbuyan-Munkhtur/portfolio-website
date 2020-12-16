@@ -8,8 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import PageTransition from 'gatsby-plugin-page-transitions';
-import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions";
+// import PageTransition from 'gatsby-plugin-page-transitions';
+// import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions";
 
 import Header from "./header"
 import Footer from "./footer"
