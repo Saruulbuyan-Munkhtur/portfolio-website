@@ -29,15 +29,19 @@
   }
 
   .footer-phone {
-    text-align: center;
-    text-decoration: none;
     margin: auto;
     vertical-align: middle;
     padding-left: 2vw;
     padding-right: 2vw;
     border-left: 1px solid $prime_green;
     border-right: 1px solid $prime_green;
+    .span {
+      @include link-styling($text_black, $prime_blue);
+      color: #333333 !important;
+      text-align: center;
+      text-decoration: none;
 
+    }
   }
 
   .footer-copyright {
@@ -65,6 +69,7 @@
 @media (max-width: 640px) {
   .footer-main {
     flex-direction: column;
+    bottom: 0;
   }
   .footer-social {
     flex-direction: row;

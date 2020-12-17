@@ -1,26 +1,18 @@
-@import './_variables.scss';
+// SCSS CODE THAT I WROTE
+%margin_padding_zero {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 0;
 
-%header-link {
-  color: $title_black;
-  font-size: 0.9em;
-  border: none;
-  text-decoration: none;
-  font-weight:400;
-  transition:all .5s;
-  border:0 solid transparent;
-  text-transform: uppercase;
-  letter-spacing: 3.5px;
-
-  @media(max-width: 500px){
-    font-size: 0.4em;
-  }
-
-  &:hover {
-    //color: #353634;
-    color: $prime_green;
-    text-decoration: solid;
-  }
 }
+
+// SCSS CODE THAT I'M NOT SURE ABOUT
+
 
 
 

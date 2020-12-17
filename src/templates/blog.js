@@ -37,12 +37,12 @@ const Blog = (props) => {
               <h1>{props.data.markdownRemark.frontmatter.title}</h1>
               <h2>{props.data.markdownRemark.frontmatter.subtitle} <span>{props.data.markdownRemark.frontmatter.date} · {props.data.markdownRemark.timeToRead} min read </span></h2>
               {/* <p>{props.data.markdownRemark.frontmatter.date} · {props.data.markdownRemark.timeToRead} min read</p> */}
-              <TagList className="blog-tagList" topics={props.data.markdownRemark.frontmatter.topics}/>
           </div>
         </div>
         <div className="blog-content"
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}>
         </div>
+        <TagList className="blog-tagList" topics={props.data.markdownRemark.frontmatter.topics}/>
       </article>
     </Layout>
   )

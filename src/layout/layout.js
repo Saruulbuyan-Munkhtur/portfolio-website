@@ -52,7 +52,7 @@ const Layout = ({ children, location }) => {
             <Header siteTitle={data.site.siteMetadata.title}/>
             <main>
               {children}
-              <Sidebar/>
+              {/* <Sidebar/> */}
             </main>
             <Footer siteTitle={data.site.siteMetadata.title}/>
           {/* </PageTransition> */}

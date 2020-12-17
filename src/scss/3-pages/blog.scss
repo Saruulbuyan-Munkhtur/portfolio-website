@@ -2,8 +2,6 @@
 
 
 .blog-main{
-    width: 75%;
-    max-width: 1250px;
     margin-top: 15vh;
     padding-right: 5vh;
     padding-left: 5vh;
@@ -32,11 +30,12 @@
             display: inline
         }
         a {
-            text-decoration: none;
-            color: $secondary_blue;
-            &:hover {
-                text-decoration: underline;
-            }
+            @include link-styling($secondary_blue, $secondary_green)
+            // text-decoration: none;
+            // color: $secondary_blue;
+            // &:hover {
+            //     text-decoration: underline;
+            // }
         }
         strong {
             font-weight: 600;
@@ -44,7 +43,7 @@
        
         blockquote {
             font-size: 1.1em;
-            width:85%;
+            width: clamp(200px, 80vw, 800px);
             margin:50px auto;
             font-family:Open Sans;
             font-style:italic;
@@ -54,6 +53,7 @@
             line-height:1.6;
             position: relative;
             background: $light;
+            overflow-wrap: break-word;
     
             &:before {
                 font-family:Arial;
@@ -77,9 +77,11 @@
             p {
                 margin: 0;
                 text-align: center;
+                width: 100%;
             }
         }
         p {
+            width: clamp(320px, 75vw, 1000px);
             font-size: 18pt;
             margin-top: 2em;
             margin: 0;
@@ -92,6 +94,7 @@
         }
 
         h1 {
+            width: clamp(320px, 75vw, 1000px);
             font-size: 36px;
             margin-top: 1.95em;
             font-weight: 600;
@@ -102,6 +105,7 @@
             }
         }
         h2 {
+            width: clamp(320px, 75vw, 1000px);
             font-size: 30px;
             margin-top: 1.95em;
             font-weight: 600;
@@ -112,6 +116,7 @@
             }
         }
         h3 {
+            width: clamp(320px, 75vw, 1000px);
             font-size: 26px;
             margin-top: 1.95em;
             font-weight: 600;
@@ -162,7 +167,7 @@
         align-self: center;
         width: 100%;
         margin-right: 0;
-        margin-left: 0vw;
+        margin-left: 0;
         div {
             margin-top: 1em;
             margin: auto;

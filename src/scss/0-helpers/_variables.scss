@@ -7,7 +7,7 @@ $secondary_green: #6ebfb5;
 $secondary_blue: #588BAE;
 $text_black: #212529;
 $title_black: #292929;
-$background_white: #eeecf1;
+$background_white: #ffffff;
 
 
 
@@ -34,7 +34,7 @@ $link_blue: #19c5cc;
 
 $prime_orange: #e1755e;
 
-$prime_brown: #5d554b;
+$prime_brown: #ffffff;
 
 
 $color_grey: #e2e2e2;
@@ -50,3 +50,14 @@ $picton_blue: #3485EF;
 $electric_violet: #9E34EF;
 
 $font-secondary: 'Merriweather', serif;
+
+
+
+
+
+
+
+// SCSS BREAKPOINTS
+$phone-width: 500px;
+$tablet-width: 768px;
+$desktop-width: 1024px;

@@ -1,4 +1,27 @@
+// SCSS CODE THAT I WROTE AND UNDERSTAND
 
+@mixin link-styling($link_text_color, $link_hover_color) {
+  color: $link_text_color;
+  font-size: inherit;
+  border: none;
+  text-decoration: none;
+  font-weight: inherit;
+  transition:all .5s;
+  border:0 solid transparent;
+  letter-spacing: inherit;
+
+  @media(max-width: 500px){
+    font-size: 0.4em;
+  }
+
+  &:hover {
+    //color: #353634;
+    color: $link_hover_color;
+    text-decoration: underline;
+  }
+}
+
+// SCSS CODE THAT I'M NOT SURE ABOUT
 
 @keyframes shadow-drop-2-center {
   0% {
@@ -177,8 +200,4 @@
 
 @mixin shadow {
   box-shadow: 0 3px 7px -1px rgba(#000, .1);
-}
-
-@mixin link-text {
-  @extend %header-link;
 }
