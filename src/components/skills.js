@@ -29,7 +29,7 @@ const Skills = () => {
         <Choice className="skills-SVG"/>
       </div> 
       <div className="skills-wrapper">
-        <h1 data-spliting>My Programming Experience</h1>
+        <h1 className="skills-title">My Programming Experience</h1>
         <div class="skill">
           <p>REACT</p>
           <div class="skill-bar skill1 wow slideInLeft animated">

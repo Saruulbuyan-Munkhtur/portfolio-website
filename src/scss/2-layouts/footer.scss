@@ -28,22 +28,7 @@
 
   }
 
-  .footer-phone {
-    margin: auto;
-    vertical-align: middle;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    border-left: 1px solid $prime_green;
-    border-right: 1px solid $prime_green;
-    .span {
-      @include link-styling($text_black, $prime_blue);
-      color: #333333 !important;
-      text-align: center;
-      text-decoration: none;
-
-    }
-  }
-
+  
   .footer-copyright {
     @extend %flex_container;
     font-size: 10px;
@@ -87,9 +72,25 @@
 }
 
 @media (min-width: 1024px) {
-
+  
 }
 
 @media (min-width: 1280px) {
 
 }
+  // .footer-phone {
+  //   margin: auto;
+  //   vertical-align: middle;
+  //   padding-left: 2vw;
+  //   padding-right: 2vw;
+  //   border-left: 1px solid $prime_green;
+  //   border-right: 1px solid $prime_green;
+  //   color: #333 !important;
+  //   .a {
+  //     @include link-styling($text_black, $prime_blue, #444444);
+  //     color: #333333 !important;
+  //     text-align: center;
+  //     text-decoration: none;
+  
+  //   }
+  // }

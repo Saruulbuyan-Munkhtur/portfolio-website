@@ -19,13 +19,15 @@
 }
 
 .homePage-quotes {
-		margin-top: 30vh;
-    border-top: 5px solid $prime_green;
-    border-bottom: 5px solid $prime_green;
-    background-color: azure;
+  height: 80vh;
+  
+  background-color: #ddd;
+  @media (min-width: $phone_width) {
+    padding-top: 30vh;
+  }
+  
 }
 /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
 
 /* Container for skill bars */
 .container {

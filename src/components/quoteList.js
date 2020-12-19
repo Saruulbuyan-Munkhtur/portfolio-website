@@ -9,34 +9,37 @@ const QuoteList = ({tag}) => {
   const data = useStaticQuery(graphql`
     {
       allQuotesJson {
-        edges {
-          node {
-            author
-            quote
-          }
+        nodes {
+          quote
+          author
+          mySubQuote
         }
+        totalCount
       }
-    } 
+    }
   `)
-  let quotes = getRandom(data.allQuotesJson.edges, 3)
-  setInterval(function(){
-    let quotes = getRandom(data.allQuotesJson.edges, 3)
-  }, 1000);
 
-  return (
-    <div className="quotes-section">
-      <div className="quoteList-header">
-        <h3>Quotes that mean something to me.</h3>
-      </div>
-      <div className="quoteList-body">
-        {quotes.map((quote) => {
-          return (
-            <Quote quote={quote.node}/>
-          )
-        })}
-      </div>
+let quotes = data.allQuotesJson.nodes;
+let totalCount = data.allQuotesJson.totalCount;
+
+return (
+  <div className="quotes-section">
+    {/* <div>
+      <Quote quotes={quotes} totalCount={totalCount}/>
     </div>
+    <div>
+      <Quote quotes={quotes} totalCount={totalCount}/>
+    </div> */}
+    <div>
+      <Quote quotes={quotes} totalCount={totalCount}/>
+    </div>
+  </div>
   )
 }
 
 export default QuoteList;
+
+// let quotes = getRandom(data.allQuotesJson.edges, 3)
+// setInterval(function(){
+//   let quotes = getRandom(data.allQuotesJson.edges, 3)
+// }, 1000);

@@ -1,30 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 //import TransitionLink from 'gatsby-plugin-transition-link';
 
 import '../scss/main.scss'
 
-const Quote = ({quote}) => {
-  return (
-    // <TransitionLink
-    //   to="/page-2"
-    //   exit={{
-    //     trigger: ({ exit, node }) => this.interestingExitAnimation(exit, node),
-    //     length: 1
-    //   }}
-    //   entry={{
-    //     delay: 0.6
-    //   }}
-    // >
-    <div className='quote-body'>
-      <blockquote>
-        <div className="quote-content">
-          <p className="quote-quote">{quote.quote}</p>
-          <p className="quote-author"> - {quote.author}</p>
+class Quote extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      quoteIndex: 0
+    }
+    this.handleQuoteIndex = this.handleQuoteIndex.bind(this);
+  }
+
+  handleQuoteIndex = () => {
+    // console.log("THIS IS WHAT YOU GET")
+    this.setState(quoteIndex => ({ quoteIndex: Math.floor(Math.random() * Math.floor(this.props.totalCount))}))
+  }
+
+  render() {
+    return (
+      <div className='quote-body'>
+        <div className="quote-content quote-effect">
+          <p className="quote-quote quote-effect__heading">{this.props.quotes[this.state.quoteIndex].quote}</p>
+          <p className="quote-author quote-effect__subheading"> - {this.props.quotes[this.state.quoteIndex].author}</p>
         </div>
-      </blockquote>
-    </div>
-    // </TransitionLink>
-  )
+          <button onClick={this.handleQuoteIndex} type="button">Button</button>
+      </div>
+    )
+  }
 }
 
 export default Quote;

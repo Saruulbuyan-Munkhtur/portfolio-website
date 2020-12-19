@@ -16,7 +16,7 @@ export default function Icons(width) {
             <a  href="https://www.linkedin.com/in/saruulbuyan-munkhtur-a82257185/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><LinkedIn className="icon2" styles={{maxWidth: `${width}`}}/></a>
             <a  href="https://www.instagram.com/saruulbuyanmunkhtur/?hl=en" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram className="icon2" styles={{maxWidth: `${width}`}}/></a>
             <a  href="https://www.Twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter"><Twitter className="icon2" styles={{maxWidth: `${width}`}}/></a>
-            <a  href="mailto: saruulbuyan.m@eudimized.com" target="_blank" rel="noreferrer" aria-label="Gmail"><Gmail className="icon2" styles={{maxWidth: `${width}`}}/></a>
+            <a  href="mailto:saruulbuyan.m@eudimized.com" target="_blank" rel="noreferrer" aria-label="Gmail"><Gmail className="icon2" styles={{maxWidth: `${width}`}}/></a>
         </div>
     )
 }

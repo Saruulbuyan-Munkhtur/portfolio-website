@@ -30,7 +30,7 @@
             display: inline
         }
         a {
-            @include link-styling($secondary_blue, $secondary_green)
+            @include link-styling($secondary_blue, $secondary_green, #444)
             // text-decoration: none;
             // color: $secondary_blue;
             // &:hover {
