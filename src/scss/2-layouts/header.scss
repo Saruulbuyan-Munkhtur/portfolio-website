@@ -7,11 +7,11 @@
   top: 0;
   left: 0;
   right: 0;
-  margin: 0;
-  width: 100%;
-  padding: 1.3vh 1.1vw 1.3vh 7vw;
+  padding: 1vh 0 1vh 3vw;
+  width: 90%;
+  margin: 1.1vh 1.1vw 1.3vh 4.1vw;
   z-index: 10;
-  background-color: $prime_brown;
+  background-color: $light;
   box-shadow: 0 0 20px 0 #000;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,12 @@
     align-items: center;
     max-width: 50px;
     max-height: 30px;
-    @include link-styling($text_black, $prime_green, #444);
+    transition: all .2s ease-in-out;
+    @include link-styling($prime_01, $prime_05, #444);
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   ul {
@@ -51,7 +56,11 @@
         align-self: center;
         padding: 70px, auto; 
         margin: auto;
-        @include link-styling($text_black, $prime_green, #444);
+        @include link-styling($prime_01, $prime_01, #444);
+        transition: all .2s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
       
     }

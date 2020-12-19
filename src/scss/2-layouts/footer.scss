@@ -8,12 +8,12 @@
   left: 0;
   margin-top: 10vh;
   padding: 0.5rem;
-  background-color: $prime_white;
+  background-color: $prime_02;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: $text_black;
+  color: white;
   text-Decoration: none;
   min-height: 10vh;
 
@@ -32,6 +32,7 @@
   .footer-copyright {
     @extend %flex_container;
     font-size: 10px;
+    font-weight: 100;
     font: $font-secondary;
     
     .span {
@@ -41,10 +42,10 @@
 
     
     a {
-      color: $dark;
+      color: white;
       text-decoration: none;
       &:hover {
-        color: $picton_blue;
+        text-decoration: underline;
       }
     }
   }

@@ -16,7 +16,7 @@
   // border-top: 2px solid $prime_green;
   // text-align: left;
   // font-size: 12pt;
-  // align-self: center;
+  align-self: center;
   // justify-self: center;
   // margin-top: 3vh;
   
@@ -78,7 +78,7 @@
   &:hover {
     opacity: 1;
     .effect__subheading {
-      color: $prime_green;
+      color: $prime_01;
       transform: translateY(70%);
       opacity: 1;
     }
