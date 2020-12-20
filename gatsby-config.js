@@ -13,14 +13,35 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-page-transitions`,
     `gatsby-plugin-transition-link`,
-
-    // `gatsby-plugin-layout`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        // Configure color of the scroll indicator
+        background: 'linear-gradient(90deg, rgba(2,0,36,1) 61%, rgba(41,207,187,1) 92%, rgba(0,212,255,1) 100%)',
+        // Height of the scroll indicator
+        height: "4px",
+        // Configure paths where the scroll indicator will appear
+        paths: ["/", "/blog/**", "/blog"],
+        // Configure the z-index of the indicator element
+        zIndex: `9999`,
+      },
+    },
     // {
-    //   resolve: `gatsby-plugin-layout`,
-    //   options: {
-    //     component: require.resolve(`${__dirname}/src/layout/layout.js`),
-    //   },
-    // 
+		//   resolve:  require.resolve(`${__dirname}/src/components/postTemplate`),
+    // },
+    
+    {
+      resolve: "gatsby-plugin-load-script",
+      options: {
+        id: "s9-sdk",
+        async: true,
+        defer: true,
+        content: "df5c8cc5a19443cc8e193ef1df65bb0f",
+        src: "socialshare.min.js"
+      },
+    },
+
     {
       resolve: 'gatsby-plugin-page-transitions',
       options: {

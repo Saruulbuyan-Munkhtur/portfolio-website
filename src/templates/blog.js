@@ -33,6 +33,7 @@ const Blog = (props) => {
       <Head />
       <article className="blog-main">
         <div className="blog-blogTitle">
+          <div class="s9-widget-wrapper"></div>
           <div>
               <h1>{props.data.markdownRemark.frontmatter.title}</h1>
               <h2>{props.data.markdownRemark.frontmatter.subtitle} <span>{props.data.markdownRemark.frontmatter.date} · {props.data.markdownRemark.timeToRead} min read </span></h2>

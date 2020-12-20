@@ -19,6 +19,7 @@ const Landing = () => {
           <h2>
             I am React TypeScript fullstack web developer. I also have experience in Data Science and Competitive Coding.
           </h2>
+          <div className="s9-widget-wrapper"></div>
           {/* <p>
             I'm also an auto-didact and an aspiring polymath. I believe that information and knowledge are fully available to those who want to learn. My blogs are meant to help on my journey of learning and hopefully you can find some use in them as well.
           </p> */}
