@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import '../scss/main.scss'
 import Quote from './quote'
-import getRandom from '../utils/utils'
+// import getRandom from '../utils/utils'
 
 const QuoteList = ({tag}) => {
   const data = useStaticQuery(graphql`

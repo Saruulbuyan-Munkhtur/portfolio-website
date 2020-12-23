@@ -18,9 +18,9 @@ module.exports = {
       resolve: `gatsby-plugin-scroll-indicator`,
       options: {
         // Configure color of the scroll indicator
-        background: 'linear-gradient(90deg, rgba(2,0,36,1) 61%, rgba(41,207,187,1) 92%, rgba(0,212,255,1) 100%)',
+        background: 'linear-gradient(90deg, rgba(0,212,255,1) 25%, rgba(85,226,255,1) 37%, rgba(54,213,210,1) 48%, rgba(41,207,187,1) 64%, rgba(9,50,54,1) 77%, rgba(2,0,36,1) 88%)',
         // Height of the scroll indicator
-        height: "4px",
+        height: "5px",
         // Configure paths where the scroll indicator will appear
         paths: ["/", "/blog/**", "/blog"],
         // Configure the z-index of the indicator element
@@ -75,7 +75,7 @@ module.exports = {
         name: `Eudaimonia Optimized`,
         short_name: `Eudimized`,
         start_url: `/`,
-        background_color: `#eeecf1`,
+        background_color: `#ffffff`,
         theme_color: `#2e8b57`,
         display: `minimal-ui`,
         icon: `src/images/social_app.png`, // This path is relative to the root of the site.

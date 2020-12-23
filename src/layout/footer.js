@@ -8,7 +8,7 @@ import '../scss/main.scss'
 import Icons from '../components/icons'
 
 
-import Phone from '../assets/phone.svg'
+// import Phone from '../assets/phone.svg'
 
 const Footer = ({ siteTitle }) => (
   <footer className="footer-main">
