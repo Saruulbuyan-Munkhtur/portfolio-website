@@ -21,7 +21,7 @@ import Choice from "../assets/code_thinking.svg"
 // import Googleanalytics from "../assets/googleanalytics.svg" 
 // import Graphql_SVG from "../assets/graphql.svg"
 // import Typescript from "../assets/typescript.svg"
-// comment
+// commen
 
 const Skills = () => {
   return (
