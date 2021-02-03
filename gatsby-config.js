@@ -18,11 +18,11 @@ module.exports = {
       resolve: `gatsby-plugin-scroll-indicator`,
       options: {
         // Configure color of the scroll indicator
-        background: 'linear-gradient(90deg, rgba(0,212,255,1) 25%, rgba(85,226,255,1) 37%, rgba(54,213,210,1) 48%, rgba(41,207,187,1) 64%, rgba(9,50,54,1) 77%, rgba(2,0,36,1) 88%)',
+        background: '#28b337',
         // Height of the scroll indicator
         height: "5px",
         // Configure paths where the scroll indicator will appear
-        paths: ["/", "/blog/**", "/blog"],
+        paths: ["/blog/**", "/blog"],
         // Configure the z-index of the indicator element
         zIndex: `9999`,
       },
@@ -78,7 +78,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#2e8b57`,
         display: `minimal-ui`,
-        icon: `src/images/social_app.png`, // This path is relative to the root of the site.
+        icon: `src/assets/geometric_hexagon.svg`, // This path is relative to the root of the site.
       },
     },
     {
