@@ -24,7 +24,6 @@ class Quote extends Component {
           <p className="quote-quote quote-effect__heading">{this.props.quotes[this.state.quoteIndex].quote}</p>
           <p className="quote-author quote-effect__subheading"> - {this.props.quotes[this.state.quoteIndex].author}</p>
         </div>
-          <button onClick={this.handleQuoteIndex} type="button">Button</button>
       </div>
     )
   }

@@ -11,8 +11,8 @@
   width: 100vw;
   margin: 0px 0vw 1.3vh 0vw;
   z-index: 10;
-  background-color: $light;
-  box-shadow: 0 0 20px 0 #000;
+  background-color: rgba(204, 204, 204, 0.0001);
+  //box-shadow: 0 0 20px 0 #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +20,7 @@
   text-transform: capitalize;
   transition: transform 400ms cubic-bezier(.25,.37,.17,.96);
   transition: all 0.3s ease-out;
+  background-blend-mode: darken;
 } 
 
   .navbar-logo {
@@ -31,6 +32,7 @@
     max-width: 50px;
     max-height: 30px;
     transition: all .2s ease-in-out;
+    opacity: 90%;
     @include link-styling($prime_01, $prime_05, #444);
 
     &:hover {
@@ -52,15 +54,21 @@
       justify-content: center;
       align-items: center;
 
+      @media(min-width: 700px) {
+        margin: 0 1vw;
+      }
+
       .navbar-link{
-        font-size: clamp(24px, 2.25vw, 32px) !important;
+        font-size: 20px !important;
         align-self: center;
         padding: 70px, auto; 
         margin: auto;
-        @include link-styling($prime_01, $prime_01, #444);
+        font-style: italic;
+        @include link-styling($prime_01, $prime_01, $prime_03);
         transition: all .2s ease-in-out;
         &:hover {
-          transform: scale(1.1);
+          text-decoration: overline;
+          transform: scale(1.2);
         }
       }
       

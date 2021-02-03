@@ -14,10 +14,10 @@ const Landing = () => {
       {/* <div className="landing-illustration">
         <Code_Thinking className="landing-SVG"/>
       </div>  */}
-      <div className="homePage-content">
-          <span>I'm Saruulbuyan Munkhtur Welcome to my Blog and Portfolio</span>
+      <div className="landing-title">
+          <span>SARUULBUYAN MUNKHTUR</span>
           <h2>
-            I am React TypeScript fullstack web developer. I also have experience in Data Science and Competitive Coding.
+            MERN-FULLSTACK-DEVELOPER. ASPIRING-POLYMATH.
           </h2>
           <div className="s9-widget-wrapper"></div>
           {/* <p>

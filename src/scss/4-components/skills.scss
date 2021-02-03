@@ -3,7 +3,8 @@
 	text-align: center;
 	width: clamp(300px, 80vw, 1400px);
 	position: relative;
-	margin: auto;
+  margin: auto;
+  margin-bottom: 10vh;
   text-align: center;
   @media (min-width: $phone_width) {
     display: flex;

@@ -39,9 +39,6 @@ const BlogPage = ({ location }) => {
       <Head />
       <SEO></SEO>
       <div className="blogs-main">
-        <div className="blogs-tagList"> 
-          <TagList topics={alltopics}/>
-        </div>
         <div className="blogs-blogList">
           {location.state? <BlogList tag={location.state.tag.topic}/>: <BlogList />}
         </div>

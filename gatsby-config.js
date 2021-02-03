@@ -13,16 +13,16 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-page-transitions`,
     `gatsby-plugin-transition-link`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-scroll-indicator`,
       options: {
         // Configure color of the scroll indicator
-        background: '#28b337',
+        background: '#1f9c8d',
+        background_color: '#1f9c8d',
         // Height of the scroll indicator
-        height: "5px",
+        height: "3px",
         // Configure paths where the scroll indicator will appear
-        paths: ["/blog/**", "/blog"],
+        paths: ["/blog/**", "/blogs"],
         // Configure the z-index of the indicator element
         zIndex: `9999`,
       },
@@ -76,7 +76,7 @@ module.exports = {
         short_name: `Eudimized`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#2e8b57`,
+        theme_color: `#1f9c8d`,
         display: `minimal-ui`,
         icon: `src/assets/geometric_hexagon.svg`, // This path is relative to the root of the site.
       },
