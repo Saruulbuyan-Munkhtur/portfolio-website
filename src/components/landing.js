@@ -15,7 +15,7 @@ const Landing = () => {
         <Code_Thinking className="landing-SVG"/>
       </div>  */}
       <div className="landing-title">
-          <span>SARUULBUYAN MUNKHTUR</span>
+          <h1>SARUULBUYAN MUNKHTUR</h1>
           <h2>
             MERN-FULLSTACK-DEVELOPER. ASPIRING-POLYMATH.
           </h2>

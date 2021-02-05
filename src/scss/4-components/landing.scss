@@ -19,42 +19,35 @@ $shadows-big:    multiple-box-shadow(100);
   top: 50%;
   left: 0;
   right: 0;
-  margin: auto;
-  width: 80vw;
+  margin: 0 auto;
+  width: 90vw;
   height: 80vh;
-  
-  color: $prime_01;
   text-align: center;
-  font-family: 'lato',sans-serif;
-  font-weight: 300;
-  font-size: clamp(16pt, 4vw, 30pt);
-  letter-spacing: 0.025em;
-  line-height: 120%;
-  margin-top: -60px;
-  //padding-left: 10px;
-  
+
   h1 {
-    font: 20px sans-serif;
-    line-height: 45;
-    margin: 0;
-    font-weight: 600;
-    color: $black_03;
-    box-sizing: inherit;
+    color: white !important;
+    font-weight: 300;
+    font-size: clamp(16pt, 5vw, 30pt);
+    letter-spacing: 0.025em;
+    line-height: 120%;
+    margin: 0 auto;
   }
+  
+
   h2 {
     display: block;
     text-align: center;
     line-height: 5vh;
     color: $grey_05;
-    font-size: clamp(10pt, 2vw, 16pt);
-    font-weight: 300;
+    font-size: clamp(10pt, 2vw, 12pt);
+    font-weight: 200;
   }
-  span{
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  // span{
+  //   background: -webkit-linear-gradient(white, #38495a);
+  //   // -webkit-background-clip: text;
+  //   // background-clip: text;
+  //   // -webkit-text-fill-color: transparent;
+  // }
   &:after {
     content: " ";
     position: absolute;

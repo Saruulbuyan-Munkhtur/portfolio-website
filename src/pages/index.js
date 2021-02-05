@@ -5,9 +5,10 @@ import Layout from "../layout/layout"
 import Head from "../meta/head"
 import SEO from "../meta/seo"
 
+import Landing from "../components/landing"
+import AboutMe from "../components/aboutMe"
 import QuoteList from "../components/quoteList"
 import Skills from "../components/skills"
-import Landing from "../components/landing"
 
 import "../scss/main.scss"
 
@@ -19,6 +20,9 @@ const IndexPage = () => (
     <div>
       <section className="homePage-landing">
         <Landing />
+      </section>
+      <section className="homePage-aboutMe">
+        <AboutMe />
       </section>
       <section className="homePage-quotes">
         <QuoteList />
