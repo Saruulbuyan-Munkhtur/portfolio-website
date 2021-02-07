@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article",
+  "info": {
+    "name": "Article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Subtitle": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "domain": {
+      "type": "enumeration",
+      "enum": [
+        "programming",
+        "dataScience",
+        "philosophy",
+        "law",
+        "psychology",
+        "productivity",
+        "geopolitics"
+      ]
+    }
+  }
+}
