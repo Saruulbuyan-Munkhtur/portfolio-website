@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Eudaimonia Optimized`,
@@ -11,7 +15,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     `gatsby-transformer-remark`,
-    `gatsby-plugin-page-transitions`,
+    //`gatsby-plugin-page-transitions`,
     `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-scroll-indicator`,
@@ -40,13 +44,6 @@ module.exports = {
         content: "df5c8cc5a19443cc8e193ef1df65bb0f",
         src: "socialshare.min.js"
       },
-    },
-
-    {
-      resolve: 'gatsby-plugin-page-transitions',
-      options: {
-        transitionTime: 500
-      }
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -117,10 +114,10 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: "http://localhost:1337",
+        apiURL: process.env.API_URL || "http://localhost:1337",
         contentTypes: [
-          "restaurant",
-          "category",
+          'article',
+          'category',
         ],
         queryLimit: 1000,
       },

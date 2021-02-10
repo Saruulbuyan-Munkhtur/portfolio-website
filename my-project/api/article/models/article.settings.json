@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "article",
   "info": {
-    "name": "Article"
+    "name": "Article",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,7 +18,11 @@
       "type": "date"
     },
     "Title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 3,
+      "maxLength": 100
     },
     "Subtitle": {
       "type": "string"
@@ -33,17 +38,9 @@
       "plugin": "upload",
       "required": false
     },
-    "domain": {
-      "type": "enumeration",
-      "enum": [
-        "programming",
-        "dataScience",
-        "philosophy",
-        "law",
-        "psychology",
-        "productivity",
-        "geopolitics"
-      ]
+    "categories": {
+      "collection": "category",
+      "via": "articles"
     }
   }
 }
