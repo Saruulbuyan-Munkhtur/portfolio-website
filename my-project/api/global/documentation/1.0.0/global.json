@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/homepage": {
+    "/global": {
       "get": {
         "deprecated": false,
-        "description": "Find all the homepage's records",
+        "description": "Find all the global's records",
         "responses": {
           "200": {
-            "description": "Retrieve homepage document(s)",
+            "description": "Retrieve global document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Homepage"
+                    "$ref": "#/components/schemas/Global"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Homepage"
+          "Global"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single homepage record",
+        "description": "Update a single global record",
         "responses": {
           "200": {
-            "description": "Retrieve homepage document(s)",
+            "description": "Retrieve global document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Homepage"
+                  "$ref": "#/components/schemas/Global"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Homepage"
+          "Global"
         ],
         "requestBody": {
           "description": "",
@@ -247,7 +247,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewHomepage"
+                "$ref": "#/components/schemas/NewGlobal"
               }
             }
           }
@@ -256,10 +256,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single homepage record",
+        "description": "Delete a single global record",
         "responses": {
           "200": {
-            "description": "deletes a single homepage based on the ID supplied",
+            "description": "deletes a single global based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -302,7 +302,7 @@
         },
         "summary": "",
         "tags": [
-          "Homepage"
+          "Global"
         ],
         "parameters": []
       }
@@ -310,7 +310,7 @@
   },
   "components": {
     "schemas": {
-      "Homepage": {
+      "Global": {
         "required": [
           "id"
         ],
@@ -318,13 +318,7 @@
           "id": {
             "type": "string"
           },
-          "title": {
-            "type": "string"
-          },
-          "subtitle": {
-            "type": "string"
-          },
-          "profilepicture": {
+          "Logo": {
             "required": [
               "id",
               "name",
@@ -391,19 +385,59 @@
               }
             }
           },
+          "FirstDynamic": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "s-icons.social-icons"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              ]
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewHomepage": {
+      "NewGlobal": {
         "properties": {
-          "title": {
-            "type": "string"
-          },
-          "subtitle": {
-            "type": "string"
+          "FirstDynamic": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "s-icons.social-icons"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              ]
+            }
           },
           "published_at": {
             "type": "string",
@@ -421,7 +455,7 @@
   },
   "tags": [
     {
-      "name": "Homepage"
+      "name": "Global"
     }
   ]
 }

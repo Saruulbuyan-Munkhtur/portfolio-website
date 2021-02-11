@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "homepages",
+  "collectionName": "globals",
   "info": {
-    "name": "Homepage",
+    "name": "Global",
     "description": ""
   },
   "options": {
@@ -11,13 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "subtitle": {
-      "type": "text"
-    },
-    "profilepicture": {
+    "Logo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -27,6 +21,12 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "FirstDynamic": {
+      "type": "dynamiczone",
+      "components": [
+        "s-icons.social-icons"
+      ]
     }
   }
 }

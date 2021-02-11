@@ -119,6 +119,10 @@ module.exports = {
           'article',
           'category',
         ],
+        singleTypes: [
+          'homepage',
+          'global',
+        ],
         queryLimit: 1000,
       },
     },
