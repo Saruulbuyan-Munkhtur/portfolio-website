@@ -1,6 +1,11 @@
 .quote-body {
   font-family: 'Yrsa', Times New Roman, serif;
-  
+  background-color: #e2e2e2;
+}
+
+.quote-carousel {
+  background-color: white;
+  border: 3px solid red;
 }
 
 .quotes-section {
@@ -17,14 +22,7 @@
   // text-align: left;
   // font-size: 12pt;
   align-self: center;
-  // justify-self: center;
-  // margin-top: 3vh;
-  
-  
-  // .quote-author{
-  //   text-align: center;
-  //   text-decoration: underline;
-  // }
+  margin: auto;
 }
 
 

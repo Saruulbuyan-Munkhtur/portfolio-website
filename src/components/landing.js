@@ -1,11 +1,15 @@
 import React from 'react';
+import Img from 'gatsby-image';
 
 import '../scss/main.scss';
 
 //import Code_Thinking from "../assets/relaxing.svg"
 
-
 const Landing = ({ homepageData }) => {
+  const profilePicture = homepageData.strapiHomepage.profilePicture?.childImageSharp.fluid
+  const title = homepageData.strapiHomepage.title;
+  const subtitle = homepageData.strapiHomepage.subtitle;
+  
   return (
     <section>
       <div className="stars"></div>
@@ -15,8 +19,9 @@ const Landing = ({ homepageData }) => {
         <Code_Thinking className="landing-SVG"/>
       </div>  */}
       <div className="landing-title">
-          <h1>{homepageData.strapiHomepage.title}</h1>
-          <h2>{homepageData.strapiHomepage.subtitle}</h2>
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
+          <Img fluid={profilePicture} alt="My profile picture" />
           <div className="s9-widget-wrapper"></div>
           {/* <p>
             I'm also an auto-didact and an aspiring polymath. I believe that information and knowledge are fully available to those who want to learn. My blogs are meant to help on my journey of learning and hopefully you can find some use in them as well.

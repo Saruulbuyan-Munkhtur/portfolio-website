@@ -1,41 +1,46 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import {graphql, StaticQuery } from "gatsby"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 
 import '../scss/main.scss'
-import Quote from './quote'
-// import getRandom from '../utils/utils'
 
-const QuoteList = ({tag}) => {
-  const data = useStaticQuery(graphql`
-    {
-      allQuotesJson {
-        nodes {
-          quote
-          author
-          mySubQuote
+const QuoteList = () => (
+  <StaticQuery
+    query={graphql`
+      query{
+        strapiHomepage {
+          quotes {
+            id
+            quote
+            quoteAuthor
+            quoteMysubquote
+          }
         }
-        totalCount
       }
+    `}
+    render={(data) => (
+        <div className="quotes-section">
+          <Carousel
+            showStatus={false}
+            className="quote-carousel"
+          >
+            {data.strapiHomepage.quotes.map(quote => (
+              <div className='quote-body' key={quote.id}>
+                <div className="quote-content quote-effect">
+                  <p className="quote-quote quote-effect__heading">{quote.quote}</p>
+                  <p className="quote-author quote-effect__subheading"> - {quote.author}</p>
+                </div>
+              </div>              
+            ))}
+          </Carousel>
+        </div>
+      )
     }
-  `)
+  />
 
-let quotes = data.allQuotesJson.nodes;
-let totalCount = data.allQuotesJson.totalCount;
-
-return (
-  <div className="quotes-section">
-    {/* <div>
-      <Quote quotes={quotes} totalCount={totalCount}/>
-    </div>
-    <div>
-      <Quote quotes={quotes} totalCount={totalCount}/>
-    </div> */}
-    <div>
-      <Quote quotes={quotes} totalCount={totalCount}/>
-    </div>
-  </div>
-  )
-}
+)
 
 export default QuoteList;
 

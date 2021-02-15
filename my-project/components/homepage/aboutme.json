@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_homepage_aboutmes",
+  "info": {
+    "name": "aboutme",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "aboutmeTitle": {
+      "type": "string"
+    },
+    "aboutmeSubtitle": {
+      "type": "string"
+    },
+    "aboutmeSocialicons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "s-icons.social-icons"
+    },
+    "aboutmeDescription": {
+      "type": "text"
+    },
+    "profileimages": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

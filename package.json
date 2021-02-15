@@ -50,6 +50,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-refresh": "^0.8.3",
+    "react-responsive-carousel": "^3.2.12",
     "react-spring": "^8.0.27",
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.1.1",

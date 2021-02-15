@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_homepage_quotes",
+  "info": {
+    "name": "quotes",
+    "icon": "stream",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    },
+    "quoteAuthor": {
+      "type": "string"
+    },
+    "quoteMysubquote": {
+      "type": "text",
+      "default": "my thoughts on this quote are .....",
+      "required": true,
+      "unique": true
+    }
+  }
+}

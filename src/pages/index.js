@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from "../layout/layout"
 import Head from "../meta/head"
@@ -17,14 +18,15 @@ const IndexPage = ({tag}) => {
   const homepageData = useStaticQuery(graphql`
     {
       strapiHomepage {
+        id
         subtitle
         title
-        profilePicture {
+        profilepicture {
           publicURL
           name
           childImageSharp {
-            fluid(maxWidth: 200, maxHeight: 150) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 200, height: 150) {
+              src
             }
           }
         }
@@ -37,11 +39,11 @@ const IndexPage = ({tag}) => {
       <SEO title="Home" />
       <div>
         <section className="homePage-landing">
-          <h1>{homepageData.strapiHomepage.title}</h1>
           <Landing homepageData={homepageData}/>
         </section>
         <section className="homePage-aboutMe">
-          <AboutMe />
+          <AboutMe homepageData={homepageData}/>
+          <Img fixed={homepageData.strapiHomepage.profilepicture.childImageSharp.fixed} />
         </section>
         <section className="homePage-quotes">
           <QuoteList />

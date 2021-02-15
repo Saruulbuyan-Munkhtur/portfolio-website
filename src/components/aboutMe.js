@@ -1,27 +1,40 @@
 import React from 'react';
 import Icons from './icons';
-import Img from 'gatsby-image';
+import Image from 'gatsby-image';
 
 import '../scss/4-components/aboutMe.scss'
+import { useStaticQuery } from 'gatsby';
 
-const AboutMe = () => {
-  
+const AboutMe = ({ homepageData }) => {
+  const aboutmeData = useStaticQuery(graphql`
+    {
+      strapiHomepage {
+        aboutme {
+          aboutmeDescription
+          aboutmeSubtitle
+          id
+          aboutmeTitle
+        }
+      }
+    }
+  `) 
+  const aboutme = aboutmeData.strapiHomepage.aboutme;
+  const profilePicture = homepageData.strapiHomepage.profilepicture?.childImageSharp.Fluid;
+
   return (
     <div className="aboutMe-body">
       <div className="aboutMe-title">
-        <h1>ABOUT ME</h1>
-        <h2>GET TO KNOW ME BEFORE YOU DIVE INTO MY CONTENT</h2>
+        <h1>{aboutme.aboutmeTitle}</h1>
+        <h2>{aboutme.aboutmeSubtitle}</h2>
       </div>
       <div className="aboutMe-photo">
-        <Img fixed={"../images/gastby.jpg"} />
+        {/* <Image src={aboutme.profileImages} /> */}
       </div>
       <div className="aboutMe-icons">
         <Icons />        
       </div>
       <div className="aboutMe-content">
-        <p> 
-          I am a self-employed MERN Fullstack developer based in Ulaanbaatar, Mongolia.
-        </p>
+        <p>{aboutme.aboutmeDescription}</p>
       </div>      
     </div>
   )
