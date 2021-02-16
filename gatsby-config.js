@@ -15,7 +15,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     `gatsby-transformer-remark`,
-    //`gatsby-plugin-page-transitions`,
     `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-scroll-indicator`,
