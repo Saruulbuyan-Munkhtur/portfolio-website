@@ -17,14 +17,14 @@
     "date": {
       "type": "date"
     },
-    "Title": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": true,
       "minLength": 3,
       "maxLength": 100
     },
-    "Subtitle": {
+    "subtitle": {
       "type": "string"
     },
     "thumbnail": {
@@ -41,6 +41,9 @@
     "categories": {
       "collection": "category",
       "via": "articles"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

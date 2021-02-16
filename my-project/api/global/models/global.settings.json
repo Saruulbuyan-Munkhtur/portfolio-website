@@ -11,22 +11,22 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Logo": {
+    "favicon": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": false
     },
-    "FirstDynamic": {
-      "type": "dynamiczone",
-      "components": [
-        "s-icons.social-icons"
-      ]
+    "defaultSeo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.seo"
+    },
+    "siteName": {
+      "type": "string"
     }
   }
 }

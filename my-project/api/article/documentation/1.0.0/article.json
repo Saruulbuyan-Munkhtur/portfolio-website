@@ -517,7 +517,7 @@
       "Article": {
         "required": [
           "id",
-          "Title"
+          "title"
         ],
         "properties": {
           "id": {
@@ -530,12 +530,12 @@
             "type": "string",
             "format": "date"
           },
-          "Title": {
+          "title": {
             "type": "string",
             "maxLength": 100,
             "minLength": 3
           },
-          "Subtitle": {
+          "subtitle": {
             "type": "string"
           },
           "thumbnail": {
@@ -624,6 +624,9 @@
                     "type": "string"
                   }
                 },
+                "Slug": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -636,6 +639,9 @@
               }
             }
           },
+          "slug": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -644,7 +650,7 @@
       },
       "NewArticle": {
         "required": [
-          "Title"
+          "title"
         ],
         "properties": {
           "content": {
@@ -654,12 +660,12 @@
             "type": "string",
             "format": "date"
           },
-          "Title": {
+          "title": {
             "type": "string",
             "maxLength": 100,
             "minLength": 3
           },
-          "Subtitle": {
+          "subtitle": {
             "type": "string"
           },
           "categories": {
@@ -667,6 +673,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "slug": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

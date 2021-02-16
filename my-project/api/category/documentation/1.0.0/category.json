@@ -530,7 +530,7 @@
             "items": {
               "required": [
                 "id",
-                "Title"
+                "title"
               ],
               "properties": {
                 "id": {
@@ -542,10 +542,10 @@
                 "date": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Subtitle": {
+                "subtitle": {
                   "type": "string"
                 },
                 "thumbnail": {
@@ -556,6 +556,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "slug": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -568,6 +571,9 @@
                 }
               }
             }
+          },
+          "Slug": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -585,6 +591,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "Slug": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

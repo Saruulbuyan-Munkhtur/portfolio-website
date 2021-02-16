@@ -18,6 +18,9 @@
       "via": "categories",
       "collection": "article",
       "dominant": true
+    },
+    "Slug": {
+      "type": "string"
     }
   }
 }
