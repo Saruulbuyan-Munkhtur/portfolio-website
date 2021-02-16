@@ -1,9 +1,9 @@
 import React from 'react';
 import Icons from './icons';
-import Image from 'gatsby-image';
+import Img from 'gatsby-image';
 
 import '../scss/4-components/aboutMe.scss'
-import { useStaticQuery } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const AboutMe = ({ homepageData }) => {
   const aboutmeData = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const AboutMe = ({ homepageData }) => {
     }
   `) 
   const aboutme = aboutmeData.strapiHomepage.aboutme;
-  const profilePicture = homepageData.strapiHomepage.profilepicture?.childImageSharp.Fluid;
+  const profilePicture = homepageData.strapiHomepage.profilepicture.childImageSharp.fixed;
 
   return (
     <div className="aboutMe-body">
@@ -28,7 +28,14 @@ const AboutMe = ({ homepageData }) => {
         <h2>{aboutme.aboutmeSubtitle}</h2>
       </div>
       <div className="aboutMe-photo">
-        {/* <Image src={aboutme.profileImages} /> */}
+      <Img 
+        fixed={profilePicture} 
+        objectFit="cover"
+        objectPosition="50% 50%"
+        alt=""
+        fadeIn={true}
+        className="aboutMe-image"
+        />
       </div>
       <div className="aboutMe-icons">
         <Icons />        

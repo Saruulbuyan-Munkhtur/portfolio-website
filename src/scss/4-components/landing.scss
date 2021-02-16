@@ -21,7 +21,7 @@ $shadows-big:    multiple-box-shadow(100);
   right: 0;
   margin: 0 auto;
   width: 90vw;
-  height: 80vh;
+  height: 20vh;
   text-align: center;
 
   h1 {
@@ -37,6 +37,7 @@ $shadows-big:    multiple-box-shadow(100);
   h2 {
     display: block;
     text-align: center;
+    margin: 0;
     line-height: 5vh;
     color: $grey_05;
     font-size: clamp(10pt, 2vw, 12pt);

@@ -11,7 +11,7 @@
 
 
 .aboutMe-title {
-  padding-bottom: 40px;
+  padding-bottom: 3vh;
   h1 {
     margin: 0;
     font-size: 26px;
@@ -21,17 +21,13 @@
   }
   h2 {
     margin: 0;
-    padding: 0 0 10px;
+    padding: 1em 0 0 0;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 3.5px;
     text-transform: uppercase;
     opacity: .7;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
   }
 }
 
@@ -39,4 +35,13 @@
   p {
     font-size: 16px;
   }
+}
+
+.aboutMe-photo {
+  align-self: center;
+}
+
+.aboutMe-image {
+  border-radius: 70px;
+  border: 2px solid aqua;
 }
