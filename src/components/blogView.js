@@ -5,29 +5,27 @@ import Img from 'gatsby-image'
 
 import '../scss/main.scss'
 
-const BlogView2 = ({ edge }) => {
-  console.log("tesst")
+const BlogView = ({ edge }) => {
   return (
-
-    <div key={edge.node.id} className="blogView-item">
-      <Link to={`/blog/${edge.node.fields.slug}`}>
+    <div key={edge.node.strapiId} className="blogView-item">
+      <Link to={`/blog/${edge.node.slug}`}>
       
         <div className="blogView-thumbnail">
-          <Link to={`/blog/${edge.node.fields.slug}`}>
+          <Link to={`/blog/${edge.node.slug}`}>
             <Img className="brighten"
-              fluid={edge.node.frontmatter.thumbnail.childImageSharp.fluid}
+              fluid={edge.node.thumbnail.childImageSharp.fluid}
             />
           </Link>
         </div>
         <div className="blogView-content">
           <div className="blogView-header">
-            <h1>{edge.node.frontmatter.title}</h1>
+            <h1>{edge.node.title}</h1>
           </div>
           <div className="blogView-subtitle">
-            <h2>{edge.node.frontmatter.subtitle}</h2>
+            <h2>{edge.node.subtitle}</h2>
           </div>
           <div className="blogView-date">
-            <p>{edge.node.frontmatter.date}</p>
+            <p>{edge.node.date}</p>
           </div>
         </div>
       </Link>        
@@ -35,7 +33,7 @@ const BlogView2 = ({ edge }) => {
     )
 } 
 
-export default BlogView2;
+export default BlogView;
 
 
 // <ul>

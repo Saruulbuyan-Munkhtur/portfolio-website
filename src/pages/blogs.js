@@ -1,51 +1,51 @@
 import React from 'react';
 import Layout from '../layout/layout'
-import SEO from '../meta/seo'
-import Head from "../meta/head"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import BlogList from '../components/blogList'
-import TagList from '../components/tagList'
 
 import '../scss/main.scss'
 
 
 const BlogPage = ({ location }) => {
-  const data = useStaticQuery(graphql`{
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            topics
-          }
-        }
-      }
-    }
-  }`)
-
-  let alltopics = [];
-  data.allMarkdownRemark.edges.map((edge) => {
-    edge.node.frontmatter.topics.map((topic) => {
-      if (!alltopics.includes(topic)){
-        alltopics.push(topic)
-      }
-      return 0;
-    })
-
-    return 0;
-  })
-  
+  const data = useStaticQuery(query);
+ 
   return (
     <Layout>
-      <Head />
-      <SEO></SEO>
       <div className="blogs-main">
         <div className="blogs-blogList">
-          {location.state? <BlogList tag={location.state.tag.topic}/>: <BlogList />}
+          <BlogList articles={data.allStrapiArticle.edges}/>
         </div>
       </div>
     </Layout>
   )
 }
+
+const query = graphql`
+  query {
+    allStrapiArticle {
+      edges {
+        node {
+          categories {
+            Name
+          }
+          strapiId
+          subtitle
+          title
+          content
+          date
+          slug
+          thumbnail {
+            childImageSharp {
+              fluid(maxWidth: 800, maxHeight: 500) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default BlogPage;
 
