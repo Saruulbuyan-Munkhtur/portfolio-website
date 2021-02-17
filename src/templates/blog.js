@@ -31,8 +31,8 @@ export const data = graphql`
       title
       thumbnail {
         childImageSharp{
-          fixed(width: 500){
-            ...GatsbyImageSharpFixed
+          fluid(maxHeight: 500){
+            ...GatsbyImageSharpFluid
           }
         }
       } 
@@ -53,9 +53,9 @@ const Blog = ({ data }) => {
               {/* <p>{article.date} · {props.data.markdownRemark.timeToRead} min read</p> */}
               <div className="s9-widget-wrapper"></div>
           </div>
+          <Img fluid={article.thumbnail.childImageSharp.fluid} />
         </div>
         <div className="blog-content">
-          <Img fixed={article.thumbnail.childImageSharp.fixed} />
           <Markdown source={article.content} escapeHtml={false} plugins={[math]} renderers={renderers} />
         </div>
         <div id="s9comments"></div>

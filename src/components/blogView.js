@@ -8,7 +8,7 @@ import '../scss/main.scss'
 const BlogView = ({ edge }) => {
   return (
     <div key={edge.node.strapiId} className="blogView-item">
-      <Link to={`/blog/${edge.node.slug}`}>
+      <Link to={`/blog/${edge.node.slug}`} aria-label={`Read about ${edge.node.slug}`}>
       
         <div className="blogView-thumbnail">
           <Link to={`/blog/${edge.node.slug}`}>
