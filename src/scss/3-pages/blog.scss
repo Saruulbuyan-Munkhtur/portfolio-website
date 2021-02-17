@@ -10,6 +10,10 @@
         padding: 0 5vh;
         margin: 15vh auto;
     }
+
+    .img{
+        margin: auto;
+    }
     
     .blog-content {
         letter-spacing: -0.003em;
@@ -91,7 +95,7 @@
         p {
             width: clamp(320px, 55vw, 700px);
             font-size: 14pt;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.6em;
             margin-top: 2em;
             margin: 0 auto;
@@ -216,7 +220,9 @@
                 line-height: 24px;
                 color: $grey_06;
                 font-size: 20px;
-                font-weight: 300;
+                font-weight: 400;
+                margin-top: 1em;
+                margin-bottom: 0.5em;
 
                 span {
                     display: block;

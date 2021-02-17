@@ -1,10 +1,19 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Markdown from "react-markdown";
+import Img from "gatsby-image";
+import Tex from '@matejmazur/react-katex'
+import math from 'remark-math'
+import 'katex/dist/katex.min.css' // `react-katex` does not import the CSS for you
+
 import '../scss/main.scss';
 
 import Layout from '../layout/layout'
 
+const renderers = {
+  inlineMath: ({value}) => <Tex math={value} />,
+  math: ({value}) => <Tex block math={value} />
+}
 //import Icons from '../components/icons'
 
 
@@ -22,8 +31,8 @@ export const data = graphql`
       title
       thumbnail {
         childImageSharp{
-          fluid{
-            ...GatsbyImageSharpFluid
+          fixed(width: 500){
+            ...GatsbyImageSharpFixed
           }
         }
       } 
@@ -38,16 +47,19 @@ const Blog = ({ data }) => {
     <Layout>
       <article className="blog-main">
         <div className="blog-blogTitle">
-          <div class="s9-widget-wrapper"></div>
           <div>
               <h1>{article.title}</h1>
               <h2>{article.subtitle} <span>{article.date} · 2 min read </span></h2>
               {/* <p>{article.date} · {props.data.markdownRemark.timeToRead} min read</p> */}
+              <div className="s9-widget-wrapper"></div>
           </div>
         </div>
         <div className="blog-content">
-          <Markdown source={article.content} escapeHtml={false} />
+          <Img fixed={article.thumbnail.childImageSharp.fixed} />
+          <Markdown source={article.content} escapeHtml={false} plugins={[math]} renderers={renderers} />
         </div>
+        <div id="s9comments"></div>
+        <script defer src="https://social9.com/comments/js/s9comments.js"></script>
       </article>
     </Layout>
   )

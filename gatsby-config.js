@@ -41,7 +41,7 @@ module.exports = {
         async: true,
         defer: true,
         content: "df5c8cc5a19443cc8e193ef1df65bb0f",
-        src: "socialshare.min.js"
+        src: "//cdn.social9.com/js/socialshare.min.js"
       },
     },
     {
