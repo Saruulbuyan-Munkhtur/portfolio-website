@@ -30,7 +30,10 @@ const QuoteList = () => (
               <div className='quote-body' key={quote.id}>
                 <div className="quote-content quote-effect">
                   <p className="quote-quote quote-effect__heading">{quote.quote}</p>
-                  <p className="quote-author quote-effect__subheading"> - {quote.author}</p>
+                  <p className="quote-author quote-effect__subheading"> - {quote.quoteAuthor}</p>
+                </div>
+                <div className="quote-mySubquote">
+                  <p>{quote.quoteMysubquote}</p>
                 </div>
               </div>              
             ))}
