@@ -44,4 +44,12 @@
 .aboutMe-image {
   border-radius: 70px;
   border: 2px solid aqua;
+  &:hover {
+      transform: scale(1.05); 
+    }
+}
+
+.aboutMe-icons {
+  width: 100%;
+  margin: 1em 0;
 }

@@ -28,14 +28,14 @@ const AboutMe = ({ homepageData }) => {
         <h2>{aboutme.aboutmeSubtitle}</h2>
       </div>
       <div className="aboutMe-photo">
-      <Img 
-        fixed={profilePicture} 
-        objectFit="cover"
-        objectPosition="50% 50%"
-        alt=""
-        fadeIn={true}
-        className="aboutMe-image"
-        />
+        <Img 
+          fixed={profilePicture} 
+          objectFit="cover"
+          objectPosition="50% 50%"
+          alt=""
+          fadeIn={true}
+          className="aboutMe-image"
+          />
       </div>
       <div className="aboutMe-icons">
         <Icons />        
