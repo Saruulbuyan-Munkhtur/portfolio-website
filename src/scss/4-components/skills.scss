@@ -6,7 +6,7 @@
   margin: auto;
   margin-bottom: 10vh;
   text-align: center;
-  @media (min-width: $phone_width) {
+  @media (min-width: 700px) {
     display: flex;
     flex-flow: row-reverse nowrap;
   }
@@ -18,9 +18,9 @@
   max-width: 80vw;
   max-height: fit-content;
   margin: auto;
-  margin-bottom: -20vh;
   flex: 1;
-  @media (min-width: $phone_width) {
+  @media (min-width: 700px) {
+    margin-bottom: -20vh;
     max-width: 40vw;
     max-height: 80vh;
   }
@@ -35,7 +35,7 @@
 .skills-wrapper{
   position: relative;
   flex: 1;
-  @media (min-width: $phone_width) {
+  @media (min-width: 700px) {
     max-width: 40vw;
     max-height: 60vh;
     font-family: 'Roboto', sans-serif;
@@ -54,7 +54,7 @@
     
   }
   .skill > p {
-    font-size: 16pt;
+    font-size: 10pt;
     font-weight: 400;
     color: #1a1716;
     margin: 0;
@@ -77,11 +77,6 @@
     position: relative;
   }
 
-  /* SKILL 1 */
-  .skill1{
-    width: 95%;
-    
-  }
   .skill-bar span{
     position: absolute;
     border-top: 5px solid  $prime_03;
@@ -94,13 +89,18 @@
   .skill-bar {
     position: relative;
   }
-
+  /* SKILL 1 */
+  .skill1{
+    width: 75%;
+    
+  }
+  
   .skill1 .skill-count1 {
       right: 0;
   }
   /* SKILL 2 */
   .skill2{
-      width: 85%;
+      width: 65%;
   }
 
   .skill2 .skill-count2 {
@@ -108,7 +108,7 @@
   }
   /* SKILL 3 */
   .skill3{
-      width: 75%;
+      width: 85%;
   }
   .skill3 .skill-count3 {
       right: 0;
@@ -116,7 +116,7 @@
 
   /* SKILL 4 */
   .skill4{
-      width: 65%
+      width: 45%
   }
 
   .skill4 .skill-count4 {
@@ -134,7 +134,7 @@
 
   /* SKILL 6 */
   .skill6{
-      width: 90%
+      width: 60%
   }
 
   .skill6 .skill-count6 {

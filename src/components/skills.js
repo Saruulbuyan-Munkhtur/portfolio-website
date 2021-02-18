@@ -34,25 +34,25 @@ const Skills = () => {
         <div class="skill">
           <p>REACT</p>
           <div class="skill-bar skill1 wow slideInLeft animated">
-              <span class="skill-count1">95%</span>
+              <span class="skill-count1">75%</span>
           </div>
         </div>
         <div class="skill">
           <p>EXPRESS and NODE JS</p>
           <div class="skill-bar skill2 wow slideInLeft animated">
-            <span class="skill-count2">85%</span>
+            <span class="skill-count2">65%</span>
           </div>
         </div>
         <div class="skill">
           <p>SCSS</p>
           <div class="skill-bar skill3 wow slideInLeft animated">
-            <span class="skill-count3">75%</span>
+            <span class="skill-count3">85%</span>
           </div>
         </div>
         <div class="skill">
           <p>MONGODB</p>
           <div class="skill-bar skill4 wow slideInLeft animated">
-            <span class="skill-count4">65%</span>
+            <span class="skill-count4">45%</span>
           </div>
         </div>
         <div class="skill">
@@ -64,7 +64,7 @@ const Skills = () => {
         <div class="skill">
           <p>GraphQL</p>
           <div class="skill-bar skill6 wow slideInLeft animated">
-            <span class="skill-count6">90%</span>
+            <span class="skill-count6">60%</span>
           </div>
         </div>
       </div>
