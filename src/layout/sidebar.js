@@ -1,11 +1,14 @@
-import React from 'react'
-import Icons from '../components/icons'
-import Avatar from '../components/avatar'
+import React from 'react';
+import Icons from '../components/icons';
+import Img from 'gatsby-image';
 
-const Sidebar = () => {
+const Sidebar = ({ profileImage }) => {
   return (
     <div className="sidebar-main">
-      <Avatar url="http://localhost:8000/static/30db1376cf4121e8abf5d10b7e989c13/8e1fc/sunset2.jpg" title="first" alt="second" />
+      <div className="sidebar-image-container">
+        <Img fixed={profileImage} className="sidebar-image"/>
+        <span>Follow Me</span>
+      </div>
       <Icons/>
     </div>
   )

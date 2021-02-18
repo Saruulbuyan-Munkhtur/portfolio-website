@@ -22,7 +22,7 @@ const IndexPage = ({tag}) => {
           publicURL
           name
           childImageSharp {
-            fixed(width: 200) {
+            fixed(width: 250) {
               ...GatsbyImageSharpFixed
             }
           }

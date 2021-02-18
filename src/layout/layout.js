@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image';
 
 import Header from "./header"
 import Footer from "./footer"
 import Seo from "./seo"
-// import Sidebar from "./sidebar"
+import Sidebar from "./sidebar"
 import '../scss/main.scss'
 
 
@@ -19,6 +20,13 @@ const Layout = ({ children, seo }) => (
             metaTitle
             metaDescription
           }
+          profileImage {
+            childImageSharp {
+              fixed(width:55) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
         }
       } 
     `}
@@ -26,7 +34,11 @@ const Layout = ({ children, seo }) => (
       <div className="body"> 
           <Seo seo={seo} />
           <Header siteTitle={data.strapiGlobal.defaultSeo.metaTitle}/>
-            <main>{children}</main>
+          <Img fixed={data.strapiGlobal.profileImage.fixed}/>
+            <main>
+              <Sidebar profileImage={data.strapiGlobal.profileImage.childImageSharp.fixed} />
+              {children}
+            </main>
           <Footer siteTitle={data.strapiGlobal.defaultSeo.metaTitle}/>
       </div>
     )}
