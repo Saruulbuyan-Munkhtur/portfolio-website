@@ -1,7 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import Img from 'gatsby-image';
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header"
 import Footer from "./footer"
@@ -22,7 +21,14 @@ const Layout = ({ children, seo }) => (
           }
           profileImage {
             childImageSharp {
-              fixed(width:55) {
+              fixed(height: 55) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          favicon {
+            childImageSharp {
+              fixed(width: 60) {
                 ...GatsbyImageSharpFixed
               }
             }
@@ -33,8 +39,7 @@ const Layout = ({ children, seo }) => (
     render={(data) => (
       <div className="body"> 
           <Seo seo={seo} />
-          <Header siteTitle={data.strapiGlobal.defaultSeo.metaTitle}/>
-          <Img fixed={data.strapiGlobal.profileImage.fixed}/>
+          <Header globalData={data.strapiGlobal}/>
             <main>
               <Sidebar profileImage={data.strapiGlobal.profileImage.childImageSharp.fixed} />
               {children}
