@@ -8,8 +8,8 @@ const Sidebar = ({ profileImage }) => {
       <div className="sidebar-image-container">
         <Img fixed={profileImage} className="sidebar-image"/>
         <span>Follow Me</span>
+        <Icons/>
       </div>
-      <Icons/>
     </div>
   )
 }
