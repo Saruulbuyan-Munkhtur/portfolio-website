@@ -7,6 +7,7 @@ import Landing from "../components/landing";
 import AboutMe from "../components/aboutMe";
 import QuoteList from "../components/quoteList";
 import Skills from "../components/skills";
+import BlogList from "../components/blogList";
 
 import "../scss/main.scss"
 
@@ -44,6 +45,10 @@ const IndexPage = ({tag}) => {
         </section>
         <section className="homePage-skills">
           <Skills />
+        </section>
+        <section className="homePage-articles">
+          <h1 className="blogList-title">My Blogs</h1>
+          <BlogList />
         </section>
       </div>
     </Layout>
