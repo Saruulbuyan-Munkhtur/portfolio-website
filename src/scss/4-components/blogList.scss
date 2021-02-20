@@ -25,3 +25,16 @@
   margin-left: 12vw;
 }
 
+.sideArticle-body {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  
+
+  div {
+    margin-bottom: 1vh;
+  }
+}
