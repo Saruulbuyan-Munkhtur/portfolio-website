@@ -11,15 +11,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
     "articles": {
-      "via": "categories",
       "collection": "article",
+      "via": "categories",
       "dominant": true
     },
-    "Slug": {
+    "slug": {
       "type": "string"
     }
   }

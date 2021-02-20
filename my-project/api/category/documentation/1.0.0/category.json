@@ -522,7 +522,7 @@
           "id": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
           "articles": {
@@ -572,7 +572,7 @@
               }
             }
           },
-          "Slug": {
+          "slug": {
             "type": "string"
           },
           "published_at": {
@@ -583,7 +583,7 @@
       },
       "NewCategory": {
         "properties": {
-          "Name": {
+          "name": {
             "type": "string"
           },
           "articles": {
@@ -592,7 +592,7 @@
               "type": "string"
             }
           },
-          "Slug": {
+          "slug": {
             "type": "string"
           },
           "published_at": {

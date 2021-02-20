@@ -39,8 +39,8 @@
       "required": false
     },
     "categories": {
-      "collection": "category",
-      "via": "articles"
+      "via": "articles",
+      "collection": "category"
     },
     "slug": {
       "type": "string"
