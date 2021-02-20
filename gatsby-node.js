@@ -1,48 +1,82 @@
-const path = require('path');
-const { EAFNOSUPPORT } = require('constants');
-
-
-module.exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === 'MarkdownRemark') {
-    const slug = path.basename(node.fileAbsolutePath, '.md')
-    
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug
-    })
-  }
-
-}
-
-
-module.exports.createPages = async ({ graphql, actions}) => {
-  const { createPage } = actions
-
-  const blogTemplate = path.resolve('./src/templates/blog.js')
-
-  const res = await graphql(`
-    query {
-      allStrapiArticle {
-        edges {
-          node {
-            slug
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+  const result = await graphql(
+    `
+      {
+        articles: allStrapiArticle {
+          edges {
+            node {
+              strapiId
+              slug
+            }
+          }
+        }
+        categories: allStrapiCategory {
+          edges {
+            node {
+              strapiId
+              slug
+            }
           }
         }
       }
-    }
-  `)
-  
-  res.data.allStrapiArticle.edges.forEach((edge) => {
-    createPage({
-      component: blogTemplate,
-      path: `/blog/${edge.node.slug}`,
-      context: {
-        slug: edge.node.slug
-      }
-    })
-  })
+    `
+  );
 
-}
+  if (result.errors) {
+    throw result.errors;
+  }
+
+  // Create blog articles pages.
+  const articles = result.data.articles.edges;
+  const categories = result.data.categories.edges;
+
+  const ArticleTemplate = require.resolve("./src/templates/blog.js");
+
+  articles.forEach((article, index) => {
+    createPage({
+      path: `/article/${article.node.slug}`,
+      component: ArticleTemplate,
+      context: {
+        slug: article.node.slug,
+      },
+    });
+  });
+  const CategoryTemplate = require.resolve("./src/templates/category.js");
+  
+  categories.forEach((category, index) => {
+    createPage({
+      path: `/category/${category.node.slug}`,
+      component: CategoryTemplate,
+      context: {
+        slug: category.node.slug,
+      },
+    });
+  });
+};
+
+// module.exports.onCreateNode = async ({ node, actions, createNodeId }) => {
+//   const crypto = require(`crypto`);
+
+//   if (node.internal.type === "StrapiArticle") {
+//     const newNode = {
+//       id: createNodeId(`StrapiArticleContent-${node.id}`),
+//       parent: node.id,
+//       children: [],
+//       internal: {
+//         content: node.content || " ",
+//         type: "StrapiArticleContent",
+//         mediaType: "text/markdown",
+//         contentDigest: crypto
+//           .createHash("md5")
+//           .update(node.content || " ")
+//           .digest("hex"),
+//       },
+//     };
+//     actions.createNode(newNode);
+//     actions.createParentChildLink({
+//       parent: node,
+//       child: newNode,
+//     });
+//   }
+// }
