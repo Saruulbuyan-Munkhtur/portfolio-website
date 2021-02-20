@@ -3,22 +3,20 @@ import { Link } from 'gatsby'
  
 import '../scss/main.scss'
 
-export default function TagList({topics}) {
+export default function CategoryList({categories}) {
   return (
     <ul className="topics">
-      {topics ? topics.map((topic) => {
-        console.log(topic)
+      {categories ? categories.map((category) => {
         return (
             <Link 
-              to='/blogs' 
-              state={{tag: {topic}}}
+              to={`/category/${category.slug}`} 
               >
               <li className="tag">
-              {topic}
+              {category.name}
               </li>
             </Link>
         )
-      }): topics}
+      }): categories}
     </ul>
   )
 }
